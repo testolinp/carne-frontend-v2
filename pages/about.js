@@ -1,31 +1,31 @@
 import React from 'react'
-import Link from 'next/link'
 import fetch from 'node-fetch'
 
-import Global from '../components/Global'
 import Layout from '../components/Layout'
+import AboutUs from '../components/about/AboutUs'
+import Team from '../components/about/Team'
+import Join from '../components/about/Join'
 
-function About({ stars }) {
+function About({ members }) {
   return (
     <>
       <Layout title="Carnemag®">
-        asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />
-      <p>Preact has {stars} ⭐</p>
-      <Link href="/">
-        <a>I bet Next.js has more stars (?)</a>
-      </Link>
+          <AboutUs />
+          <Team members={ members } />
+          <Join />
       </Layout>
     </>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://api.github.com/repos/developit/preact')
-  const json = await res.json() // better use it inside try .. catch
+  const res = await fetch('http://3.21.165.5:1337/teams')
+  const members = await res.json()
+
   return {
     props: {
-      stars: json.stargazers_count,
-    },
+      members
+    }
   }
 }
 
