@@ -14,7 +14,7 @@ class About extends Component {
       <section>
         <Layout title="Carnemag® | About Us">
           <AboutUs />
-          <Team members={ members } />
+          Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />
           <Join />
         </Layout>
       </section>

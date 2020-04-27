@@ -21,14 +21,7 @@ class Index extends Component {
     return (
       <section>
         <Layout title="Carnemag®">
-          <Herospace showLink="true" issue={ highlight } currentYear={ Global.getCurrentYear() } />
-          <Playlist issuePlaylist={ playlist } currentYear={ Global.getCurrentYear() } />
-          {/* <Artist featuredArtist={ featuredArtist } currentYear={ Global.getCurrentYear() } /> */}
-          <Slider { ...sliderSettings }>
-            { issues.map( ( issue, index ) =>
-            <Issue key={ issue.id }  currentYear={ Global.getCurrentYear() } issue={ issue } current={ index + 1 } issues= { issues.length } />
-            ) }
-          </Slider>
+          Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />Hola<br />
         </Layout>
       </section>
     )
