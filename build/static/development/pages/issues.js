@@ -12107,7 +12107,7 @@ module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artist
 
 /***/ }),
 
-/***/ 5:
+/***/ 2:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js ***!
   \*********************************************************************************************************************************************************/
@@ -12130,5 +12130,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=issues.js.map
