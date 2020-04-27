@@ -2642,9 +2642,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_about_AboutUs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/AboutUs */ "./components/about/AboutUs.js");
-/* harmony import */ var _components_about_Team__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/Team */ "./components/about/Team.js");
-/* harmony import */ var _components_about_Join__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/about/Join */ "./components/about/Join.js");
+/* harmony import */ var _components_about_AboutUs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/about/AboutUs */ "./components/about/AboutUs.js");
+/* harmony import */ var _components_about_Team__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/Team */ "./components/about/Team.js");
+/* harmony import */ var _components_about_Join__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/Join */ "./components/about/Join.js");
 var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/about.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2665,14 +2665,14 @@ function About({
       lineNumber: 12,
       columnNumber: 7
     }
-  }, __jsx(_components_about_AboutUs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_about_AboutUs__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
       columnNumber: 11
     }
-  }), __jsx(_components_about_Team__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx(_components_about_Team__WEBPACK_IMPORTED_MODULE_4__["default"], {
     members: members,
     __self: this,
     __source: {
@@ -2680,7 +2680,7 @@ function About({
       lineNumber: 14,
       columnNumber: 11
     }
-  }), __jsx(_components_about_Join__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_components_about_Join__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
