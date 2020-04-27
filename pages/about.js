@@ -2,14 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import fetch from 'node-fetch'
 
-function Preact({ stars }) {
+import Global from '../components/Global'
+import Layout from '../components/Layout'
+
+function About({ stars }) {
   return (
-    <div>
+    <>
+      <Layout title="Carnemag®">
+        asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />asdad<br />
       <p>Preact has {stars} ⭐</p>
       <Link href="/">
         <a>I bet Next.js has more stars (?)</a>
       </Link>
-    </div>
+      </Layout>
+    </>
   )
 }
 
@@ -23,4 +29,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Preact
+export default About

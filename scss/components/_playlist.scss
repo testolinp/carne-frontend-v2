@@ -1,0 +1,172 @@
+.playlist {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 25px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include breakpoint('large') {
+    padding: 100px 0 0;
+  }
+
+  &__content {
+    @include breakpoint('large') {
+      padding: 30px 0 0;
+      display: flex;
+    }
+
+    &__issue {
+      padding-bottom: 15px;
+      display: block;
+      font-family: var(--main-font);
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--color-yellow);
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        font-size: 18px;
+      }
+
+      small {
+        display: inline;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 2px;
+          margin-right: 7px;
+          position: relative;
+          top: -4px;
+          background: var(--color-yellow);
+        }
+      }
+    }
+
+    &__title {
+      font-family: var(--main-font-bold);
+      font-size: 60px;
+      -webkit-text-stroke: 1px var(--color-yellow);
+      color: rgba(0, 0, 0, 0);
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        font-size: 100px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__name {
+      padding: 20px 0 30px;
+      font-family: var(--global-text);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-yellow);
+
+      @include breakpoint('large') {
+        padding: 20px 0 50px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__spotify {
+      display: none;
+      font-family: var(--global-text);
+      font-size: 16px;
+      color: var(--color-yellow);
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        display: block;
+      }
+
+      span {
+        position: relative;
+        font-weight: 700;
+
+        &:before {
+          position: absolute;
+          top: -1px;
+          right: -35px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__spotifyBox {
+      padding: 0 30px;
+    
+      @include breakpoint('large') {
+        position: relative;
+        padding: 30px 0 0;
+      }
+
+      &__content {
+        width: 100%;
+        height: 42vh;
+        background: black;
+
+        @include breakpoint('large') {
+          width: 100%;
+          height: calc(100vh - 350px);
+          max-width: 600px;
+        }
+      }
+
+      &__text {
+        display: none;
+        font-family: var(--global-text);
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--color-yellow);
+        transform: rotateZ(-90deg);
+        transform-origin: bottom left;
+
+        @include breakpoint('large') {
+          position: absolute;
+          bottom: 0;
+          left: -20px;
+          display: block;
+        }
+
+        small {
+          display: inline;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            margin-right: 7px;
+            position: relative;
+            top: -6px;
+            background: var(--color-yellow);
+          }
+        }
+      }
+    }
+
+    &__left {
+      @include breakpoint('large') {
+        flex: 1;
+        width: 55%;
+      }
+    }
+
+    &__right {
+      @include breakpoint('large') {
+        flex: 1;
+        width: 45%;
+      }
+    }
+  }
+}

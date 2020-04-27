@@ -1,0 +1,138 @@
+.hd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+
+  @include breakpoint('large') {
+    height: 70px;
+  }
+
+  &__content {
+    position: relative;
+
+    @include breakpoint('large') {
+      display: flex;
+      padding: 0 135px;
+      align-items: center;
+    }
+
+    &__hamb {
+      display: block;
+      position: relative;
+      top: 15px;
+      left: 25px;
+      width: 30px;
+      height: 30px;
+      flex: 1;
+
+      @include breakpoint('large') {
+        display: none;
+        top: 20px;
+      }
+
+      &:before {
+        position: relative;
+        top: 2px;
+        font-size: 25px;
+      }
+    }
+
+    &__lg {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 30px;
+
+      &:before {
+        position: relative;
+        top: -83px;
+        font-size: 200px;
+      }
+
+      @include breakpoint('large') {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        transform: translateX(0);
+      }
+    }
+
+    &__lang {
+      display: none;
+      padding-right: 25px;
+
+      @include breakpoint('large') {
+        display: flex;
+      }
+
+      @include breakpoint('extra-large') {
+        padding-right: 200px;
+      }
+
+      @include breakpoint('super-extra-large') {
+        padding-right: 250px;
+      }
+
+      @include breakpoint('large') {
+        display: block;
+      }
+
+      a {
+        font-family: var(--main-font);
+        font-size: 10px;
+        line-height: 75px;
+        color: black;
+
+        &.active {
+          font-family: var(--main-font-bold);
+        }
+      }
+    }
+
+    &__link {
+      position: relative;
+      z-index: 2;
+      display: none;
+
+      @include breakpoint('large') {
+        display: flex;
+        margin-left: auto;
+      }
+
+      &__item {
+        padding-right: 50px;
+
+        @include breakpoint('extra-large') {
+          padding-right: 100px;
+        }
+
+        &:last-child {
+          padding-right: 125px;
+
+          @include breakpoint('extra-large') {
+            padding-right: 200px;
+          }
+
+          @include breakpoint('super-extra-large') {
+            padding-right: 250px;
+          }
+        }
+
+        a {
+          font-family: var(--main-font);
+          font-size: 10px;
+          line-height: 75px;
+
+          strong {
+            font-family: var(--main-font-bold);
+          }
+        }
+      }
+    }
+  }
+}

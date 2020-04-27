@@ -1,0 +1,175 @@
+.form {
+  background: #f6f6f6;
+
+  &__content {
+    @include breakpoint('large') {
+      padding: 40px 100px;
+    }
+
+    &__wrapper {
+      padding: 100px 25px 60px;
+      text-align: center;
+
+      @include breakpoint('large') {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      padding-bottom: 20px;
+      font-family: var(--main-font-bold);
+      font-size: 50px;
+      line-height: 42px;
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 75px;
+        line-height: 67px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__description {
+      padding-bottom: 20px;
+      font-family: var(--global-text);
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: 700;
+      color: #000;
+
+      @include breakpoint('large') {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &__data {
+      @include breakpoint('large') {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__sep {
+        padding: 0 25px 25px;
+
+        @include breakpoint('large') {
+          width: 33.33%;
+        }
+
+        &--textarea {
+          @include breakpoint('large') {
+            width: 66.66%;
+          }
+        }
+
+        label {
+          display: block;
+          padding-bottom: 5px;
+          font-family: var(--global-text);
+          font-size: 15px;
+          line-height: 15px;
+          font-weight: 700;
+          color: #000;
+          text-align: center;
+          text-transform: uppercase;
+
+          @include breakpoint('large') {
+            text-align: left;
+          }
+        }
+
+        input {
+          border-radius: 0;
+          padding: 0;
+          margin: 0;
+          border: 1px solid #000;
+          width: 100%;
+          height: 40px;
+          font-family: var(--global-text);
+          font-size: 15px;
+          line-height: 40px;
+          color: #000;
+          text-align: center;
+
+          @include breakpoint('large') {
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
+          &:focus {
+            outline: 0 none;
+          }
+        }
+
+        textarea {
+          border-radius: 0;
+          padding: 0;
+          margin: 0;
+          border: 1px solid #000;
+          width: 100%;
+          height: 100px;
+          font-family: var(--global-text);
+          font-size: 15px;
+          line-height: 50px;
+          color: #000;
+          text-align: center;
+          resize: vertical;
+          min-height: 40px;
+
+          @include breakpoint('large') {
+            padding: 15px 10px;
+            text-align: left;
+            line-height: 17px;
+          }
+
+          &:focus {
+            outline: 0 none;
+          }
+        }
+      }
+    }
+
+    &__btn {
+      padding: 0 25px 75px;
+
+      @include breakpoint('large') {
+        width: 33.33%;
+      }
+
+      &__link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 0 25px;
+        font-family: var(--global-text);
+        font-size: 15px;
+        line-height: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        background: #000;
+
+        &:before {
+          position: absolute;
+          top: 13px;
+          right: 25px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
