@@ -1,0 +1,231 @@
+.ft {
+  background: #fff;
+
+  &__content {
+    padding: 15px 30px;
+
+    @include breakpoint('large') {
+      display: flex;
+      padding: 40px 140px;
+    }
+
+    &__left {
+      @include breakpoint('large') {
+        flex: 1;
+        width: 40%;
+      }
+
+      &__lg {
+        display: block;
+        width: 200px;
+        height: 20px;
+
+        &:before {
+          position: relative;
+          top: -90px;
+          font-size: 200px;
+        }
+      }
+
+      &__copy {
+        display: none;
+        padding-top: 30px;
+        font-family: var(--global-text);
+        font-size: 10px;
+        font-weight: 300;
+        color: #000;
+        letter-spacing: 1px;
+
+        @include breakpoint('large') {
+          display: block;
+        }
+      }
+    }
+
+    &__center {
+      @include breakpoint('large') {
+        flex: 1;
+        width: 40%;
+      }
+
+      &__subscribe {
+        padding-top: 30px;
+
+        @include breakpoint('large') {
+          padding-top: 0;
+        }
+
+        &__title {
+          font-family: var(--main-font);
+          font-size: 17px;
+          text-transform: uppercase;
+          color: #000;
+          letter-spacing: 0.5px;
+
+          @include breakpoint('large') {
+            font-size: 15px;
+          }
+
+          strong {
+            font-family: var(--main-font-bold);
+          }
+        }
+
+        &__input {
+          width: calc(100vw - 100px);
+          position: relative;
+          padding: 5px 0 30px;
+
+          @include breakpoint('large') {
+            width: 340px;
+            padding: 10px 0 0;
+          }
+
+          input {
+            padding: 0 10px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #000;
+            font-family: var(--global-text);
+            font-size: 14px;
+            line-height: 40px;
+            font-weight: 300;
+            color: #000;
+            -webkit-appearance: none;
+            border-radius: 0;
+
+            @include breakpoint('large') {
+              font-size: 12px;
+            }
+
+            &:focus {
+              outline: 0 none;
+            }
+          }
+
+          &__btn, button {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            font-size: 0;
+            text-indent: -9999;
+
+            @include breakpoint('large') {
+              position: static;
+              top: inherit;
+              right: 0;
+            }
+
+            &:before {
+              font-family: 'carne';
+              content: "\e908";
+              position: relative;
+              top: 9px;
+              font-size: 27px;
+            }
+
+            &:focus {
+              outline: 0 none;
+            }
+          }
+
+          ::placeholder {
+            color: #000;
+            font-family: var(--global-text);
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 42px;
+
+            @include breakpoint('large') {
+              font-size: 12px;
+            }
+          }
+
+          div {
+            div {
+              font-family: var(--global-text);
+              font-size: 12px;
+              padding: 0 0 10px;
+              color: #000 !important;
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      @include breakpoint('large') {
+        flex: 1;
+        width: 20%;
+      }
+
+      &__share {
+        &__title {
+          font-family: var(--main-font);
+          font-size: 17px;
+          text-transform: uppercase;
+          color: #000;
+          letter-spacing: 0.5px;
+
+          @include breakpoint('large') {
+            font-size: 15px;
+          }
+
+          strong {
+            font-family: var(--main-font-bold);
+          }
+        }
+
+        &__list {
+          padding: 10px 0 20px;
+          display: flex;
+
+          &__item {
+            padding-right: 15px;
+
+            a {
+              display: block;
+              position: relative;
+              width: 24px;
+              height: 24px;
+
+              &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 23px;
+              }
+            }
+
+            // &:nth-child(2) {
+            //   a {
+            //     &:before {
+            //       top: -44px;
+            //       left: -18px;
+            //       transform: translate(0, 0);
+            //       font-size: 118px;
+            //     }
+            //   }
+            // }
+          }
+        }
+      }
+
+      &__copy {
+        display: block;
+        font-family: var(--global-text);
+        font-size: 12px;
+        font-weight: 300;
+        color: #000;
+
+        @include breakpoint('large') {
+          display: none;
+        }
+      }
+    }
+  }
+}

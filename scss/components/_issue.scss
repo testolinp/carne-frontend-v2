@@ -1,0 +1,254 @@
+.issue {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 25px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include breakpoint('large') {
+    overflow-x: hidden;
+    padding: 100px 0 0;
+  }
+
+  &__visual {
+    display: none;
+    transform: rotateZ(-90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: 270px;
+    right: -80px;
+    font-family: var(--main-font-bold);
+    font-size: 10px;
+    color: var(--color-yellow);
+
+    @include breakpoint('large') {
+      display: block;
+    }
+  }
+
+  &__date {
+    display: block;
+    transform: rotateZ(-90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    right: -60px;
+    bottom: 50px;
+    font-family: var(--main-font);
+    font-size: 11px;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+
+    @include breakpoint('large') {
+      height: 18px;
+      width: 250px;
+      position: absolute;
+      top: inherit;
+      right: -182px;
+      bottom: 70px;
+      font-size: 18px;
+    }
+
+    span {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 1px;
+        margin-right: 7px;
+        position: relative;
+        top: -3px;
+        background: var(--color-yellow);
+
+        @include breakpoint('large') {
+          width: 30px;
+          height: 2px;
+          position: relative;
+          top: -6px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include breakpoint('large') {
+      padding: 30px 0 0 135px;
+    }
+
+    &__title {
+      position: relative;
+      font-family: var(--main-font-bold);
+      font-size: 50px;
+      -webkit-text-stroke: 1px var(--color-yellow);
+      color: rgba(0, 0, 0, 0);
+
+      @include breakpoint('large') {
+        font-size: 100px;
+      }
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 10px;
+        margin-right: 16px;
+        position: relative;
+        top: -10px;
+        border: 1px solid  var(--color-yellow);
+
+        @include breakpoint('large') {
+          width: 80px;
+          height: 16px;
+          margin-right: 40px;
+          top: -22px;
+        }
+      }
+    }
+
+    &__number {
+      font-family: var(--main-font-bold);
+      font-size: 50px;
+      color: var(--color-yellow);
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 100px;
+        line-height: 85px;
+      }
+    }
+
+    &__wrapper {
+      padding: 30px 40px 0 0;
+
+      @include breakpoint('large') {
+        padding-top: 40px;
+        max-width: 560px;
+      }
+
+      &__artist {
+        padding-right: 50px;
+        font-family: var(--global-text);
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 700;
+        color: var(--color-yellow);
+
+        @include breakpoint('large') {
+          font-size: 34px;
+          line-height: 38px;
+        }
+      }
+
+      &__pictures {
+        font-family: var(--global-text);
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        color: var(--color-yellow);
+
+        @include breakpoint('large') {
+          padding-top: 18px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        span {
+          display: block;
+          line-height: 30px;
+        }
+      }
+
+      &__issue {
+        position: relative;
+        left: 30vw;
+        padding-top: 20px;
+        font-family: var(--main-font-bold);
+        font-size: 70px;
+        line-height: 60px;
+        -webkit-text-stroke: 1px var(--color-yellow);
+        color: rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+
+        @include breakpoint('large') {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%);
+          width: 100vw;
+          font-size: 180px;
+          text-transform: capitalize;
+        }
+
+        sup {
+          @include breakpoint('large') {
+            display: none;
+          }
+        }
+
+        span {
+          display: block;
+          padding-left: 70px;
+
+          @include breakpoint('large') {
+            display: inline-block;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    &__extra {
+      padding-top: 40px;
+
+      @include breakpoint('large') {
+        padding-top: 60px;
+        display: flex;
+      }
+
+      &__check {
+        @include breakpoint('large') {
+          width: calc(55% - 145px);
+        }
+
+        a {
+          font-family: var(--main-font);
+          font-size: 16px;
+          color: var(--color-yellow);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          strong {
+            font-family: var(--main-font-bold);
+          }
+
+          span {
+            padding-top: 10px;
+            display: block;
+            font-size: 26px;
+          }
+        }
+      }
+
+      &__numbers {
+        display: none;
+        font-family: var(--global-text);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--color-yellow);
+
+        @include breakpoint('large') {
+          display: block;
+          flex: 1;
+        }
+      }
+    }
+
+    &__left {
+      @include breakpoint('large') {
+        flex: 1;
+      }
+    }
+  }
+}
