@@ -684,6 +684,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       currentYear,
       featuredArtist
     } = this.props;
+    console.log('featuredArtist', featuredArtist);
     const {
       image,
       name,
@@ -691,9 +692,9 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       country,
       lastname,
       issue
-    } = featuredArtist;
+    } = featuredArtist[0];
     const imageBackground = {
-      backgroundImage: 'url(' + image.url + ')'
+      backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')'
     };
     return __jsx("section", {
       className: "artist",
@@ -701,7 +702,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 7
       }
     }, __jsx("div", {
@@ -709,7 +710,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 9
       }
     }, __jsx("div", {
@@ -717,7 +718,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 11
       }
     }, __jsx("div", {
@@ -725,7 +726,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 13
       }
     }, __jsx("span", {
@@ -733,29 +734,29 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 15
       }
     }, "issue ", __jsx("small", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 62
       }
-    }, "#", issue.number)), __jsx("h2", {
+    }, "#", issue.Number)), __jsx("h2", {
       className: "artist__content__title",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 15
       }
     }, __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 54
       }
     }, name), " ", lastname), __jsx("h3", {
@@ -763,21 +764,21 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 15
       }
     }, rol, __jsx("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 64
       }
     }), __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 70
       }
     }, country)), __jsx("p", {
@@ -785,7 +786,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 15
       }
     }, "Featured"), __jsx("p", {
@@ -793,91 +794,30 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 15
       }
-    }, "Artist"))), __jsx("div", {
-      className: "artist__content__extra",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 11
-      }
-    }, __jsx("div", {
-      className: "artist__content__extra__check",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 13
-      }
-    }, __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 15
-      }
-    }, __jsx("strong", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 27
-      }
-    }, "Check"), " it out", __jsx("span", {
-      className: "icon-arrow",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 56
-      }
-    }))), __jsx("p", {
-      className: "artist__content__extra__photography",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 13
-      }
-    }, rol, __jsx("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 71
-      }
-    }), __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 77
-      }
-    }, country)))), __jsx("span", {
+    }, "Artist")))), __jsx("span", {
       className: "artist__date",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 9
       }
     }, "Issue", __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 45
       }
-    }, "#", issue.number)), __jsx(_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, "#", issue.Number)), __jsx(_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
       currentYear: currentYear,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 9
       }
     }));
@@ -3476,6 +3416,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function Index({
   highlight,
   playlist,
+  featuredArtist,
   issues
 }) {
   const sliderSettings = {
@@ -3511,6 +3452,15 @@ function Index({
       lineNumber: 23,
       columnNumber: 9
     }
+  }), __jsx(_components_home_Artist__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    featuredArtist: featuredArtist,
+    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 9
+    }
   }), __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, _extends({}, sliderSettings, {
     __self: this,
     __source: {
@@ -3534,14 +3484,16 @@ function Index({
 }
 
 async function getStaticProps() {
-  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()('http://3.21.165.5:1337/issues');
+  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()('http://admin.carnemag.co:1337/issues');
   const data = await res.json();
   const highlight = data.filter(issue => issue.Highlight)[0];
-  const playlist = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://3.21.165.5:1337/playlists/${highlight.playlist.id}`).then(res => res.json());
+  const playlist = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://admin.carnemag.co:1337/playlists/${highlight.playlist.id}`).then(res => res.json());
+  const artist = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()('http://admin.carnemag.co:1337/artists?highlight=1').then(res => res.json());
   return {
     props: {
       highlight,
       playlist,
+      featuredArtist: artist,
       issues: data.sort((a, b) => a.number - b.number).reverse()
     }
   };

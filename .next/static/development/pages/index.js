@@ -688,14 +688,16 @@ var Artist = /*#__PURE__*/function (_Component) {
       var _this$props = this.props,
           currentYear = _this$props.currentYear,
           featuredArtist = _this$props.featuredArtist;
-      var image = featuredArtist.image,
-          name = featuredArtist.name,
-          rol = featuredArtist.rol,
-          country = featuredArtist.country,
-          lastname = featuredArtist.lastname,
-          issue = featuredArtist.issue;
+      console.log('featuredArtist', featuredArtist);
+      var _featuredArtist$ = featuredArtist[0],
+          image = _featuredArtist$.image,
+          name = _featuredArtist$.name,
+          rol = _featuredArtist$.rol,
+          country = _featuredArtist$.country,
+          lastname = _featuredArtist$.lastname,
+          issue = _featuredArtist$.issue;
       var imageBackground = {
-        backgroundImage: 'url(' + image.url + ')'
+        backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')'
       };
       return __jsx("section", {
         className: "artist",
@@ -703,7 +705,7 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 14,
           columnNumber: 7
         }
       }, __jsx("div", {
@@ -711,7 +713,7 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 15,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -719,7 +721,7 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 11
         }
       }, __jsx("div", {
@@ -727,7 +729,7 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 13
         }
       }, __jsx("span", {
@@ -735,29 +737,29 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 15
         }
       }, "issue ", __jsx("small", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 62
         }
-      }, "#", issue.number)), __jsx("h2", {
+      }, "#", issue.Number)), __jsx("h2", {
         className: "artist__content__title",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 15
         }
       }, __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 54
         }
       }, name), " ", lastname), __jsx("h3", {
@@ -765,21 +767,21 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 15
         }
       }, rol, __jsx("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 64
         }
       }), __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 70
         }
       }, country)), __jsx("p", {
@@ -787,7 +789,7 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 21,
           columnNumber: 15
         }
       }, "Featured"), __jsx("p", {
@@ -795,91 +797,30 @@ var Artist = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 22,
           columnNumber: 15
         }
-      }, "Artist"))), __jsx("div", {
-        className: "artist__content__extra",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 11
-        }
-      }, __jsx("div", {
-        className: "artist__content__extra__check",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 13
-        }
-      }, __jsx("a", {
-        href: "#",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 15
-        }
-      }, __jsx("strong", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 27
-        }
-      }, "Check"), " it out", __jsx("span", {
-        className: "icon-arrow",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 56
-        }
-      }))), __jsx("p", {
-        className: "artist__content__extra__photography",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 13
-        }
-      }, rol, __jsx("br", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 71
-        }
-      }), __jsx("span", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 77
-        }
-      }, country)))), __jsx("span", {
+      }, "Artist")))), __jsx("span", {
         className: "artist__date",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 32,
           columnNumber: 9
         }
       }, "Issue", __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 32,
           columnNumber: 45
         }
-      }, "#", issue.number)), __jsx(_Extra__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, "#", issue.Number)), __jsx(_Extra__WEBPACK_IMPORTED_MODULE_6__["default"], {
         currentYear: currentYear,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 33,
           columnNumber: 9
         }
       }));
@@ -16279,6 +16220,7 @@ function Index(_ref) {
 
   var highlight = _ref.highlight,
       playlist = _ref.playlist,
+      featuredArtist = _ref.featuredArtist,
       issues = _ref.issues;
   var sliderSettings = {
     dots: false,
@@ -16311,6 +16253,15 @@ function Index(_ref) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
+      columnNumber: 9
+    }
+  }), __jsx(_components_home_Artist__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    featuredArtist: featuredArtist,
+    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
       columnNumber: 9
     }
   }), __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, sliderSettings, {
