@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from '../../routes'
+import Link from 'next/link'
 import { FacebookShareButton, TwitterShareButton, PinterestShareButton, EmailShareButton } from 'react-share'
 
 import Extra from './Extra'

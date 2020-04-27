@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import {Link} from '../routes'
+//import {Link} from '../routes
 
 import '../scss/styles.scss'
-import Menu from '../components/Menu'
+import Link from 'next/link'
 
 class Header extends Component {
   state = {
@@ -26,13 +26,13 @@ class Header extends Component {
           <Link href="/"><a className="hd__content__lg icon-lg" /></Link>
           <ul className="hd__content__link">
             <li className="hd__content__link__item">
-              <Link route="issues"><a><strong>ISS</strong>UES</a></Link>
+              <Link href="issues"><a><strong>ISS</strong>UES</a></Link>
             </li>
             <li className="hd__content__link__item">
-              <Link route="artists"><a><strong>ART</strong>ISTS</a></Link>
+              <Link href="artists"><a><strong>ART</strong>ISTS</a></Link>
             </li>
             <li className="hd__content__link__item">
-              <Link route="about"><a><strong>ABO</strong>UT</a></Link>
+              <Link href="about"><a><strong>ABO</strong>UT</a></Link>
             </li>
             {/* <li className="hd__content__link__item">
               <Link route="submit"><a><strong>SUB</strong>MIT</a></Link>
@@ -46,7 +46,7 @@ class Header extends Component {
         </div>
       </header>
 
-      <Menu showMenu={ menuActive } />
+      
     </div>
   )
  }

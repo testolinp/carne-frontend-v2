@@ -4,10 +4,6 @@ import Slider from 'react-slick'
 import Global from '../components/Global'
 
 import Layout from '../components/Layout'
-import Herospace from '../components/home/Herospace'
-import Playlist from '../components/home/Playlist'
-import Artist from '../components/home/Artist'
-import Issue from '../components/home/Issue'
 
 class Index extends Component {
   render() {

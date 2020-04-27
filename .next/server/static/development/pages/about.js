@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -348,17 +348,16 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../routes */ "./routes.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/styles.scss */ "./scss/styles.scss");
-/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Menu */ "./components/Menu.js");
+/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/styles.scss */ "./scss/styles.scss");
+/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-
+ //import {Link} from '../routes
 
 
 
@@ -415,7 +414,7 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 25,
         columnNumber: 11
       }
-    }), __jsx(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/",
       __self: this,
       __source: {
@@ -447,8 +446,8 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 28,
         columnNumber: 13
       }
-    }, __jsx(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      route: "issues",
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "issues",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -460,14 +459,14 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29,
-        columnNumber: 36
+        columnNumber: 35
       }
     }, __jsx("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29,
-        columnNumber: 39
+        columnNumber: 38
       }
     }, "ISS"), "UES"))), __jsx("li", {
       className: "hd__content__link__item",
@@ -477,8 +476,8 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 31,
         columnNumber: 13
       }
-    }, __jsx(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      route: "artists",
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "artists",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -490,14 +489,14 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 32,
-        columnNumber: 37
+        columnNumber: 36
       }
     }, __jsx("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 32,
-        columnNumber: 40
+        columnNumber: 39
       }
     }, "ART"), "ISTS"))), __jsx("li", {
       className: "hd__content__link__item",
@@ -507,8 +506,8 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 34,
         columnNumber: 13
       }
-    }, __jsx(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      route: "about",
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "about",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -520,24 +519,16 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35,
-        columnNumber: 35
+        columnNumber: 34
       }
     }, __jsx("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35,
-        columnNumber: 38
+        columnNumber: 37
       }
-    }, "ABO"), "UT")))))), __jsx(_components_Menu__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      showMenu: menuActive,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 7
-      }
-    }));
+    }, "ABO"), "UT")))))));
   }
 
 }
@@ -652,373 +643,6 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/Menu.js":
-/*!****************************!*\
-  !*** ./components/Menu.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/Menu.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-class Menu extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    const {
-      showMenu
-    } = this.props;
-    return __jsx("section", {
-      className: `menu ${showMenu ? 'menu--active' : ''}`,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 7
-      }
-    }, __jsx("header", {
-      className: "menu__hd",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 11
-      }
-    }, __jsx("div", {
-      className: "menu__hd__content",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 13
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "menu__hd__content__hamb",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 15
-      }
-    }), __jsx("a", {
-      href: "#",
-      className: "menu__hd__content__lg icon-lg",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 15
-      }
-    }))), __jsx("div", {
-      className: "menu__content",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 11
-      }
-    }, __jsx("ul", {
-      className: "menu__content__list",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 13
-      }
-    }, __jsx("li", {
-      className: "menu__content__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 15
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 57
-      }
-    }, __jsx("a", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 72
-      }
-    }, "Home"))), __jsx("li", {
-      className: "menu__content__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 15
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/issues",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 57
-      }
-    }, __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 78
-      }
-    }, "Issues"))), __jsx("li", {
-      className: "menu__content__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 15
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/artists",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 57
-      }
-    }, __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 79
-      }
-    }, "Artists"))), __jsx("li", {
-      className: "menu__content__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 15
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/about",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 57
-      }
-    }, __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 77
-      }
-    }, "About"))), __jsx("li", {
-      className: "menu__content__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 15
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/submit",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 57
-      }
-    }, __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 78
-      }
-    }, "Submit")))), __jsx("div", {
-      className: "menu__content__lang",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 13
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "active",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 15
-      }
-    }, "eng"), __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 53
-      }
-    }, "-"), __jsx("a", {
-      href: "#",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 67
-      }
-    }, "esp")), __jsx("div", {
-      className: "menu__content__social",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 13
-      }
-    }, __jsx("p", {
-      className: "menu__content__social__title",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 15
-      }
-    }, "Follow us / Find us"), __jsx("ul", {
-      className: "menu__content__social__list",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 15
-      }
-    }, __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-ig",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 19
-      }
-    })), __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-yt",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 19
-      }
-    })), __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-spotify",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 19
-      }
-    })), __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-pinterest",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40,
-        columnNumber: 19
-      }
-    })), __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-fb",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 19
-      }
-    })), __jsx("li", {
-      className: "menu__content__social__list__item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 17
-      }
-    }, __jsx("a", {
-      href: "#",
-      className: "icon-tw",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 19
-      }
-    }))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 
@@ -3053,19 +2677,6 @@ About.getInitialProps = async () => {
 
 /***/ }),
 
-/***/ "./routes.js":
-/*!*******************!*\
-  !*** ./routes.js ***!
-  \*******************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-const routes = __webpack_require__(/*! next-routes */ "next-routes");
-
-module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artists').add('artist', '/artist/:name:lastname').add('about').add('submit');
-
-/***/ }),
-
 /***/ "./scss/styles.scss":
 /*!**************************!*\
   !*** ./scss/styles.scss ***!
@@ -3077,7 +2688,7 @@ module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artist
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -3097,17 +2708,6 @@ module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carn
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-unfetch");
-
-/***/ }),
-
-/***/ "next-routes":
-/*!******************************!*\
-  !*** external "next-routes" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next-routes");
 
 /***/ }),
 
