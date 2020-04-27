@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -334,6 +334,22 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/Global.js":
+/*!******************************!*\
+  !*** ./components/Global.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  getCurrentYear() {
+    return new Date().getFullYear();
+  }
+
+};
 
 /***/ }),
 
@@ -645,10 +661,10 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./components/about/AboutUs.js":
-/*!*************************************!*\
-  !*** ./components/about/AboutUs.js ***!
-  \*************************************/
+/***/ "./components/artists/Artist.js":
+/*!**************************************!*\
+  !*** ./components/artists/Artist.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -656,107 +672,167 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/about/AboutUs.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/artists/Artist.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-class AboutUs extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+
+
+class ArtistIssue extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    const currentYear = new Date().getFullYear();
+    const {
+      currentYear,
+      model
+    } = this.props;
+    const {
+      issue,
+      name,
+      lastname,
+      country,
+      rol,
+      image
+    } = model;
+    const backgroundImage = {
+      backgroundImage: image ? 'url(' + 'http://3.21.165.5:1337' + image.url + ')' : 'none'
+    };
     return __jsx("section", {
-      className: "about",
+      className: "artistIssue",
+      style: backgroundImage,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8,
+        lineNumber: 14,
         columnNumber: 7
       }
     }, __jsx("div", {
-      className: "about__content",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 9
-      }
-    }, __jsx("div", {
-      className: "about__content__title",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 11
-      }
-    }, __jsx("h2", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 13
-      }
-    }, "About ", __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 23
-      }
-    }, "us"))), __jsx("div", {
-      className: "about__content__data icon-arrow",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 11
-      }
-    }, __jsx("h4", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 13
-      }
-    }, "CarneMag\xAE inteds to be a catalyst of the art\x03universe. An ecosystem conceived and focused in art in all its forms and shapes. Our goal is to build a two lane bridge between artists and the public. A space to connect them with each other.", __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 254
-      }
-    }, "-")), __jsx("p", {
+      className: "artistIssue__content",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15,
+        columnNumber: 9
+      }
+    }, __jsx("div", {
+      className: "artistIssue__content__columns",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 11
+      }
+    }, __jsx("div", {
+      className: "artistIssue__content__left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
         columnNumber: 13
       }
-    }, "Somos una revista de artes visuales con base en Buenos Aires, Argentina. Dedicada a celebrar la creatividad a nivel global desde 2009. habiendo rese\xF1ado ya la obra de m\xE1s de 500 artistas de todo el mundo y pertenecientes a las m\xE1s variadas disciplinas. El cuestionamiento de lo que el arte representa socialmente es lo que nos ha mantenido vivos estos 10 a\xF1os. Sea a trav\xE9s de la revista f\xEDsica o desde nuestro sitio web, lo que nos interesa como publicaci\xF3n independiente es exhibir y discutir el trabajo de aquellos que hoy, mediante el aporte de nuevas perspectivas, son los que est\xE1n empujando la cultura hacia adelante."))), __jsx("span", {
-      className: "about__date",
+    }, __jsx("h2", {
+      className: "artistIssue__content__title",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18,
+        columnNumber: 15
+      }
+    }, __jsx("span", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 59
+      }
+    }, name), " ", lastname), __jsx("h3", {
+      className: "artistIssue__content__subtitle",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 15
+      }
+    }, rol, __jsx("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 69
+      }
+    }), country && __jsx("span", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 88
+      }
+    }, country)), __jsx("div", {
+      className: "artistIssue__content__extra",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: {
+        pathname: '/artist',
+        query: {
+          name: name,
+          lastname: lastname
+        }
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      className: "artistIssue__content__extra__check",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 97
+      }
+    }, __jsx("strong", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 147
+      }
+    }, "More"), " info ", __jsx("span", {
+      className: "icon-arrow",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 174
+      }
+    }))))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      currentYear: currentYear,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
         columnNumber: 9
       }
-    }, "Since ", __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 45
-      }
-    }, currentYear)));
+    }));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (AboutUs);
+/* harmony default export */ __webpack_exports__["default"] = (ArtistIssue);
 
 /***/ }),
 
-/***/ "./components/about/Join.js":
+/***/ "./components/home/Extra.js":
 /*!**********************************!*\
-  !*** ./components/about/Join.js ***!
+  !*** ./components/home/Extra.js ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -765,196 +841,178 @@ class AboutUs extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/about/Join.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-class Join extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("section", {
-      className: "join",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6,
-        columnNumber: 7
-      }
-    }, __jsx("p", {
-      className: "join__text",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 9
-      }
-    }, "If you want to join the team, get in touch\x03or have any inquiries about distribution, alliances\x03or special projects, please contact us at: ", __jsx("a", {
-      href: "mailto:info@carnemag.co",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 173
-      }
-    }, "info@carnemag.co")));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Join);
-
-/***/ }),
-
-/***/ "./components/about/Team.js":
-/*!**********************************!*\
-  !*** ./components/about/Team.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _TeamBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamBox */ "./components/about/TeamBox.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/about/Team.js";
+/* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-share */ "react-share");
+/* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_share__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/home/Extra.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-class Team extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+class Extra extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     const {
-      members
+      currentYear
     } = this.props;
-    return __jsx("section", {
-      className: "team",
+    return __jsx("div", {
+      className: "extra",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      className: "extra__share",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10,
-        columnNumber: 7
+        columnNumber: 9
       }
-    }, __jsx("h2", {
-      className: "team__title",
+    }, __jsx("p", {
+      className: "extra__share__text",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 11,
-        columnNumber: 9
+        columnNumber: 11
       }
     }, __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 11,
-        columnNumber: 37
+        columnNumber: 45
       }
-    }, "the"), " Team"), __jsx("div", {
-      className: "team__list",
+    }, "Sha"), "re"), __jsx("ul", {
+      className: "extra__share__list",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 12,
-        columnNumber: 9
+        columnNumber: 11
       }
-    }, members.map(team => __jsx(_TeamBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      team: team,
+    }, __jsx("li", {
+      className: "extra__share__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 13
+      }
+    }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_1__["PinterestShareButton"], {
+      media: "http://carnemag.co/dist/images/bg-large.jpg",
+      url: "http://carnemag.co/",
+      description: "CarneMag\xAE Visual Arts Magazine",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14,
         columnNumber: 13
       }
-    }))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Team);
-
-/***/ }),
-
-/***/ "./components/about/TeamBox.js":
-/*!*************************************!*\
-  !*** ./components/about/TeamBox.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/about/TeamBox.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-class TeamBox extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    const {
-      team
-    } = this.props;
-    const {
-      id,
-      image,
-      name,
-      rol
-    } = team;
-    return __jsx("article", {
-      className: "team__list__box",
-      key: id,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 7
-      }
-    }, __jsx("div", {
-      className: "team__list__box__image",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 9
-      }
-    }, __jsx("img", {
-      src: image ? 'http://3.21.165.5:1337/' + image.url : '',
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      className: "team__list__box__data",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 9
-      }
-    }, __jsx("h3", {
-      className: "team__list__box__data__title",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 11
-      }
-    }, name), __jsx("p", {
-      className: "team__list__box__data__rol",
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-pinterest",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15,
-        columnNumber: 11
+        columnNumber: 17
       }
-    }, rol)));
+    }))), __jsx("li", {
+      className: "extra__share__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 13
+      }
+    }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_1__["FacebookShareButton"], {
+      url: "http://carnemag.co/",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 15
+      }
+    }, __jsx("a", {
+      alt: "Facebook",
+      href: "#",
+      className: "icon-fb",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 17
+      }
+    }))), __jsx("li", {
+      className: "extra__share__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 13
+      }
+    }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_1__["TwitterShareButton"], {
+      url: "http://carnemag.co/",
+      title: "CarneMag\xAE Visual Arts Magazine",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 15
+      }
+    }, __jsx("a", {
+      alt: "Twitter",
+      href: "#",
+      className: "icon-tw",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 17
+      }
+    }))), __jsx("li", {
+      className: "extra__share__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 13
+      }
+    }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_1__["EmailShareButton"], {
+      url: "http://carnemag.co/",
+      subject: "CarneMag\xAE Visual Arts Magazine",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 15
+      }
+    }, __jsx("a", {
+      alt: "Mail",
+      href: "#",
+      className: "icon-mail",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 17
+      }
+    }))))), __jsx("p", {
+      className: "extra__text",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 9
+      }
+    }, "\xA9 ", currentYear, " CARNEMAG. All rights reserved."));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (TeamBox);
+/* harmony default export */ __webpack_exports__["default"] = (Extra);
 
 /***/ }),
 
@@ -2627,10 +2685,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/*!************************!*\
-  !*** ./pages/about.js ***!
-  \************************/
+/***/ "./pages/artists.js":
+/*!**************************!*\
+  !*** ./pages/artists.js ***!
+  \**************************/
 /*! exports provided: getStaticProps, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2641,11 +2699,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_about_AboutUs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/about/AboutUs */ "./components/about/AboutUs.js");
-/* harmony import */ var _components_about_Team__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/Team */ "./components/about/Team.js");
-/* harmony import */ var _components_about_Join__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/Join */ "./components/about/Join.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/about.js";
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_artists_Artist__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/artists/Artist */ "./components/artists/Artist.js");
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/artists.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2653,53 +2711,47 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-function About({
-  members
+function Artists({
+  artists
 }) {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Carnemag\xAE",
+  return __jsx("section", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Carnemag\xAE | Artists",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 7
     }
-  }, __jsx(_components_about_AboutUs__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 11
-    }
-  }), __jsx(_components_about_Team__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    members: members,
+  }, artists.map((artist, index) => __jsx(_components_artists_Artist__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    key: index,
+    model: artist,
+    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_2___default.a.getCurrentYear(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14,
       columnNumber: 11
     }
-  }), __jsx(_components_about_Join__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  })));
+  }))));
 }
 
 async function getStaticProps() {
-  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()('http://3.21.165.5:1337/teams');
-  const members = await res.json();
+  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://3.21.165.5:1337/artists`);
+  const artists = await res.json();
   return {
     props: {
-      members
+      artists
     }
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (About);
+/* harmony default export */ __webpack_exports__["default"] = (Artists);
 
 /***/ }),
 
@@ -2714,14 +2766,14 @@ async function getStaticProps() {
 
 /***/ }),
 
-/***/ 5:
-/*!******************************!*\
-  !*** multi ./pages/about.js ***!
-  \******************************/
+/***/ 6:
+/*!********************************!*\
+  !*** multi ./pages/artists.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/about.js */"./pages/about.js");
+module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/artists.js */"./pages/artists.js");
 
 
 /***/ }),
@@ -2803,6 +2855,17 @@ module.exports = require("react-mailchimp-subscribe");
 
 /***/ }),
 
+/***/ "react-share":
+/*!******************************!*\
+  !*** external "react-share" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-share");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -2815,4 +2878,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=artists.js.map
