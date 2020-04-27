@@ -1,17 +1,34 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
+import Slider from 'react-slick'
 import Global from '../components/Global'
 
 import Layout from '../components/Layout'
-
+import Herospace from '../components/home/Herospace'
+import Playlist from '../components/home/Playlist'
+import Artist from '../components/home/Artist'
+import Issue from '../components/home/Issue'
 
 class Index extends Component {
   render() {
-    
+    const { issues, highlight, featuredArtist, playlist } = this.props
+    const sliderSettings = {
+      dots: false,
+      arrows: false,
+      autoplay: true
+    }
+
     return (
       <section>
         <Layout title="Carnemag®">
-          hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>hola<br/>
+          <Herospace showLink="true" issue={ highlight } currentYear={ Global.getCurrentYear() } />
+          <Playlist issuePlaylist={ playlist } currentYear={ Global.getCurrentYear() } />
+          {/* <Artist featuredArtist={ featuredArtist } currentYear={ Global.getCurrentYear() } /> */}
+          <Slider { ...sliderSettings }>
+            { issues.map( ( issue, index ) =>
+            <Issue key={ issue.id }  currentYear={ Global.getCurrentYear() } issue={ issue } current={ index + 1 } issues= { issues.length } />
+            ) }
+          </Slider>
         </Layout>
       </section>
     )

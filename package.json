@@ -21,7 +21,8 @@
     "react-dom": "16.13.1",
     "react-iframe": "^1.8.0",
     "react-mailchimp-subscribe": "^2.1.0",
-    "react-share": "^4.1.0"
+    "react-share": "^4.1.0",
+    "react-slick": "^0.25.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
