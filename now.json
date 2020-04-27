@@ -1,0 +1,13 @@
+{
+  "name": "carnemag",
+  "version": 1,
+  "routes": [
+    { "src": "/" },
+    { "src": "/issues" },
+    { "src": "/issue" },
+    { "src": "/artists" },
+    { "src": "/artist" },
+    { "src": "/about" },
+    { "src": "/submit" }
+  ]
+}
