@@ -1,0 +1,171 @@
+.herospace-issue {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 25px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include breakpoint('large') {
+    padding: 100px 0 0;
+  }
+
+  &__visual {
+    display: none;
+    transform: rotateZ(-90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: 270px;
+    right: -80px;
+    font-family: var(--main-font);
+    font-size: 10px;
+    color: var(--color-yellow);
+
+    @include breakpoint('large') {
+      display: block;
+    }
+  }
+
+  &__date {
+    display: block;
+    transform: rotateZ(-90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: 250px;
+    right: -50px;
+    font-family: var(--main-font);
+    font-size: 9px;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+
+    @include breakpoint('large') {
+      position: absolute;
+      top: inherit;
+      right: -80px;
+      bottom: 70px;
+      font-family: var(--main-font);
+      font-size: 18px;
+    }
+
+    span {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 1px;
+        margin-right: 7px;
+        position: relative;
+        top: -3px;
+        background: var(--color-yellow);
+
+        @include breakpoint('large') {
+          width: 30px;
+          height: 2px;
+          top: -6px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include breakpoint('large') {
+      padding: 30px 0 0;
+    }
+
+    &__title {
+      font-family: var(--main-font-bold);
+      font-size: 50px;
+      -webkit-text-stroke: 1px var(--color-yellow);
+      color: rgba(0, 0, 0, 0);
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 100px;
+        padding-left: 135px;
+      }
+    }
+
+    &__number {
+      font-family: var(--main-font-bold);
+      font-size: 50px;
+      color: var(--color-yellow);
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 100px;
+        line-height: 85px;
+        padding-left: 135px;
+      }
+
+      span {
+        display: block;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 50px;
+          height: 10px;
+          margin-right: 16px;
+          position: relative;
+          top: -10px;
+          background: var(--color-yellow);
+
+          @include breakpoint('large') {
+            width: 80px;
+            height: 16px;
+            margin-right: 40px;
+            top: -22px;
+          }
+        }
+      }
+    }
+
+    &__share {
+      display: flex;
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+
+      @include breakpoint('large') {
+        display: none;
+      }
+
+      &__item {
+        padding: 0 7px;
+
+        a {
+          &:before {
+            font-size: 18px;
+            color: var(--color-yellow);
+          }
+        }
+
+        &:nth-child(3) {
+          a {
+            &:before {
+              font-size: 21px;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          a {
+            &:before {
+              position: relative;
+              top: -1px;
+              left: -5px;
+              font-size: 31px;
+            }
+          }
+        }
+      }
+    }
+
+    &__left {
+      @include breakpoint('large') {
+        width: 55%;
+      }
+    }
+  }
+}

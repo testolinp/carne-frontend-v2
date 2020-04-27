@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@font-face {
+  font-family: 'monument_extendedultrabold';
+  src: url('/static/fonts/monument/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+    url('/static/fonts/monument/monumentextended-ultrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monument_extendedregular';
+  src: url('/static/fonts/monument/monumentextended-regular-webfont.woff2') format('woff2'),
+    url('/static/fonts/monument/monumentextended-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'carne';
+  src:  url('/static/fonts/icons/carne.eot?wayfj');
+  src:  url('/static/fonts/icons/carne.eot?wayfj#iefix') format('embedded-opentype'),
+    url('/static/fonts/icons/carne.ttf?wayfj') format('truetype'),
+    url('/static/fonts/icons/carne.woff?wayfj') format('woff'),
+    url('/static/fonts/icons/carne.svg?wayfj#carne') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'carne' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-burger:before {
+  content: "\e900";
+}
+.icon-lg:before {
+  content: "\e901";
+}
+.icon-fb:before {
+  content: "\e902";
+}
+.icon-ig:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-pinterest:before {
+  content: "\e905";
+}
+.icon-spotify:before {
+  content: "\e906";
+}
+.icon-tw:before {
+  content: "\e907";
+}
+.icon-arrow:before {
+  content: "\e908";
+}
+.icon-yt:before {
+  content: "\e909";
+}
