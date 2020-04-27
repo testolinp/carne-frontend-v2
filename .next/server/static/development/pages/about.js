@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3098,7 +3098,7 @@ About.getInitialProps = async () => {
 
 const routes = __webpack_require__(/*! next-routes */ "next-routes");
 
-module.exports = routes().add('about');
+module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artists').add('artist', '/artist/:name:lastname').add('about').add('submit');
 
 /***/ }),
 
@@ -3113,7 +3113,7 @@ module.exports = routes().add('about');
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/

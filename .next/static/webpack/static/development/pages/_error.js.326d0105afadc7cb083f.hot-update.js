@@ -1,4 +1,16 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_error.js"],{
+webpackHotUpdate("static/development/pages/_error.js",{
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/classCallCheck.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/createClass.js":
+false,
 
 /***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
 /*!**************************************************************************!*\
@@ -187,6 +199,33 @@ function _typeof(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/inherits.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
+false,
+
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+false,
+
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2F_error.js!./":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2F_error.js ***!
@@ -210,16 +249,26 @@ function _typeof(obj) {
 
 /***/ }),
 
-/***/ "./node_modules/react/index.js":
-/*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_2adc2403d89adc16ead0 ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=next%2Fdist%2Fpages%2F_error!./":
+false,
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/react/index.js");
+/***/ "./node_modules/next/dist/next-server/lib/amp-context.js":
+false,
 
-/***/ }),
+/***/ "./node_modules/next/dist/next-server/lib/amp.js":
+false,
+
+/***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
+false,
+
+/***/ "./node_modules/next/dist/next-server/lib/head.js":
+false,
+
+/***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
+false,
+
+/***/ "./node_modules/next/dist/pages/_error.js":
+false,
 
 /***/ "./pages/_error.js":
 /*!*************************!*\
@@ -295,18 +344,7 @@ var Error = /*#__PURE__*/function (_Component) {
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2F_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2F_error.js!./");
 
 
-/***/ }),
-
-/***/ "dll-reference dll_2adc2403d89adc16ead0":
-/*!*******************************************!*\
-  !*** external "dll_2adc2403d89adc16ead0" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = dll_2adc2403d89adc16ead0;
-
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=_error.js.map
+})
+//# sourceMappingURL=_error.js.326d0105afadc7cb083f.hot-update.js.map

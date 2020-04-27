@@ -8568,11 +8568,11 @@ About.getInitialProps = function _callee() {
 
 var routes = __webpack_require__(/*! next-routes */ "./node_modules/next-routes/dist/index.js");
 
-module.exports = routes().add('about');
+module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artists').add('artist', '/artist/:name:lastname').add('about').add('submit');
 
 /***/ }),
 
-/***/ 2:
+/***/ 5:
 /*!*******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fabout.js ***!
   \*******************************************************************************************************************************************************/
@@ -8595,5 +8595,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=about.js.map

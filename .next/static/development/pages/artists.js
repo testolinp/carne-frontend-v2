@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/issues.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/artists.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -1043,6 +1043,106 @@ var Menu = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./components/artists/Artist.js":
+/*!**************************************!*\
+  !*** ./components/artists/Artist.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../routes */ "./routes.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var ArtistIssue = /*#__PURE__*/function (_Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(ArtistIssue, _Component);
+
+  var _super = _createSuper(ArtistIssue);
+
+  function ArtistIssue() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ArtistIssue);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ArtistIssue, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          currentYear = _this$props.currentYear,
+          model = _this$props.model;
+      var issue = model.issue,
+          name = model.name,
+          lastname = model.lastname,
+          country = model.country,
+          rol = model.rol,
+          image = model.image;
+      var backgroundImage = {
+        backgroundImage: image ? 'url(' + 'http://3.21.165.5:1337' + image.url + ')' : 'none'
+      };
+      return __jsx("section", {
+        className: "artistIssue",
+        style: backgroundImage
+      }, __jsx("div", {
+        className: "artistIssue__content"
+      }, __jsx("div", {
+        className: "artistIssue__content__columns"
+      }, __jsx("div", {
+        className: "artistIssue__content__left"
+      }, __jsx("h2", {
+        className: "artistIssue__content__title"
+      }, __jsx("span", null, name), " ", lastname), __jsx("h3", {
+        className: "artistIssue__content__subtitle"
+      }, rol, __jsx("br", null), country && __jsx("span", null, country)), __jsx("div", {
+        className: "artistIssue__content__extra"
+      }, __jsx(_routes__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        href: {
+          pathname: '/artist',
+          query: {
+            name: name,
+            lastname: lastname
+          }
+        }
+      }, __jsx("a", {
+        className: "artistIssue__content__extra__check"
+      }, __jsx("strong", null, "More"), " info ", __jsx("span", {
+        className: "icon-arrow"
+      }))))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        currentYear: currentYear
+      }));
+    }
+  }]);
+
+  return ArtistIssue;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (ArtistIssue);
+
+/***/ }),
+
 /***/ "./components/home/Extra.js":
 /*!**********************************!*\
   !*** ./components/home/Extra.js ***!
@@ -1252,373 +1352,6 @@ var Extra = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Extra);
-
-/***/ }),
-
-/***/ "./components/home/Herospace.js":
-/*!**************************************!*\
-  !*** ./components/home/Herospace.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../routes */ "./routes.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-share */ "./node_modules/react-share/es/index.js");
-/* harmony import */ var _Extra__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Extra */ "./components/home/Extra.js");
-
-
-
-
-
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/home/Herospace.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-
-
-var Herospace = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(Herospace, _Component);
-
-  var _super = _createSuper(Herospace);
-
-  function Herospace() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Herospace);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Herospace, [{
-    key: "getDate",
-    value: function getDate(date) {
-      var monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-      var newDate = new Date(date);
-      return __jsx("span", {
-        className: "herospace__date",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 12
-        }
-      }, monthShortNames[newDate.getMonth()], " ", __jsx("span", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 85
-        }
-      }, newDate.getFullYear()));
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          currentYear = _this$props.currentYear,
-          issue = _this$props.issue,
-          showLink = _this$props.showLink;
-      var Herospace = issue.Herospace,
-          Number = issue.Number,
-          highlight_artists = issue.highlight_artists,
-          secondary_artists = issue.secondary_artists,
-          Publish = issue.Publish;
-      var imageBackground = {
-        backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + Herospace.url + ')'
-      };
-      return __jsx("section", {
-        className: "herospace",
-        style: imageBackground,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 7
-        }
-      }, __jsx("div", {
-        className: "herospace__content",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 7
-        }
-      }, __jsx("div", {
-        className: "herospace__content__columns",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 9
-        }
-      }, __jsx("div", {
-        className: "herospace__content__left",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 11
-        }
-      }, __jsx("h2", {
-        className: "herospace__content__title",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 13
-        }
-      }, "Carne\xAE"), __jsx("h3", {
-        className: "herospace__content__number",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 13
-        }
-      }, __jsx("span", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 56
-        }
-      }, "Issue"), " #", Number), __jsx("div", {
-        className: "herospace__content__wrapper",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 13
-        }
-      }, __jsx("div", {
-        className: "herospace__content__wrapper__pictures",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 15
-        }
-      }, secondary_artists))), __jsx("div", {
-        className: "herospace__content__right",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40,
-          columnNumber: 11
-        }
-      }, __jsx("div", {
-        className: "herospace__content__wrapper",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41,
-          columnNumber: 13
-        }
-      }, __jsx("div", {
-        className: "herospace__content__wrapper__pictures",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45,
-          columnNumber: 15
-        }
-      }, secondary_artists)))), __jsx("div", {
-        className: "herospace__content__extra",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51,
-          columnNumber: 9
-        }
-      }, showLink && __jsx(_routes__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        href: {
-          pathname: '/issue',
-          query: {
-            slug: Number
-          }
-        },
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 23
-        }
-      }, __jsx("a", {
-        className: "herospace__content__extra__check",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 84
-        }
-      }, __jsx("strong", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 132
-        }
-      }, "Check"), " it out ", __jsx("span", {
-        className: "icon-arrow",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 162
-        }
-      })))), __jsx("ul", {
-        className: "herospace__content__share",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57,
-          columnNumber: 9
-        }
-      }, __jsx("li", {
-        className: "herospace__content__share__item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58,
-          columnNumber: 11
-        }
-      }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_7__["PinterestShareButton"], {
-        media: "http://carnemag.co/dist/images/bg-large.jpg",
-        url: "http://carnemag.co/",
-        description: "CarneMag\xAE Visual Arts Magazine",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59,
-          columnNumber: 13
-        }
-      }, __jsx("a", {
-        href: "#",
-        className: "icon-pinterest",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60,
-          columnNumber: 15
-        }
-      }))), __jsx("li", {
-        className: "herospace__content__share__item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 11
-        }
-      }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_7__["FacebookShareButton"], {
-        url: "http://carnemag.co/",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 11
-        }
-      }, __jsx("a", {
-        alt: "Facebook",
-        href: "#",
-        className: "icon-fb",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 13
-        }
-      }))), __jsx("li", {
-        className: "herospace__content__share__item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68,
-          columnNumber: 11
-        }
-      }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_7__["TwitterShareButton"], {
-        url: "http://carnemag.co/",
-        title: "CarneMag\xAE Visual Arts Magazine",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69,
-          columnNumber: 13
-        }
-      }, __jsx("a", {
-        alt: "Twitter",
-        href: "#",
-        className: "icon-tw",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70,
-          columnNumber: 15
-        }
-      }))), __jsx("li", {
-        className: "herospace__content__share__item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73,
-          columnNumber: 11
-        }
-      }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_7__["EmailShareButton"], {
-        url: "http://carnemag.co/",
-        subject: "CarneMag\xAE Visual Arts Magazine",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 74,
-          columnNumber: 13
-        }
-      }, __jsx("a", {
-        alt: "Mail",
-        href: "#",
-        className: "icon-mail",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 15
-        }
-      }))))), __jsx("span", {
-        className: "herospace__visual",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80,
-          columnNumber: 7
-        }
-      }, "Visual Arts Magazine"), this.getDate(Publish), __jsx(_Extra__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        currentYear: currentYear,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 82,
-          columnNumber: 7
-        }
-      }));
-    }
-  }]);
-
-  return Herospace;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Herospace);
 
 /***/ }),
 
@@ -3902,21 +3635,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js!./":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js ***!
+  \*******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/issues", function() {
-      var mod = __webpack_require__(/*! ./pages/issues.js */ "./pages/issues.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/artists", function() {
+      var mod = __webpack_require__(/*! ./pages/artists.js */ "./pages/artists.js")
       if(true) {
-        module.hot.accept(/*! ./pages/issues.js */ "./pages/issues.js", function() {
-          if(!next.router.components["/issues"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/issues.js */ "./pages/issues.js")
-          next.router.update("/issues", updatedPage)
+        module.hot.accept(/*! ./pages/artists.js */ "./pages/artists.js", function() {
+          if(!next.router.components["/artists"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/artists.js */ "./pages/artists.js")
+          next.router.update("/artists", updatedPage)
         })
       }
       return mod
@@ -11966,10 +11699,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/issues.js":
-/*!*************************!*\
-  !*** ./pages/issues.js ***!
-  \*************************/
+/***/ "./pages/artists.js":
+/*!**************************!*\
+  !*** ./pages/artists.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11989,7 +11722,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
 /* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_home_Herospace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/home/Herospace */ "./components/home/Herospace.js");
+/* harmony import */ var _components_artists_Artist__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/artists/Artist */ "./components/artists/Artist.js");
 
 
 
@@ -12008,44 +11741,44 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-var Issues = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Issues, _Component);
+var Artists = /*#__PURE__*/function (_Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Artists, _Component);
 
-  var _super = _createSuper(Issues);
+  var _super = _createSuper(Artists);
 
-  function Issues() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Issues);
+  function Artists() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Artists);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Issues, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Artists, [{
     key: "render",
     value: function render() {
-      var issues = this.props.issues;
+      var artists = this.props.artists;
       return __jsx("section", null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        title: "Carnemag\xAE | Issues"
-      }, issues.map(function (issue, index) {
-        return __jsx(_components_home_Herospace__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        title: "Carnemag\xAE | Artists"
+      }, artists.map(function (artist, index) {
+        return __jsx(_components_artists_Artist__WEBPACK_IMPORTED_MODULE_10__["default"], {
           key: index,
-          issue: issue,
+          model: artist,
           currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_8___default.a.getCurrentYear()
         });
       })));
     }
   }]);
 
-  return Issues;
+  return Artists;
 }(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
-Issues.getInitialProps = function _callee() {
-  var res, data;
+Artists.getInitialProps = function _callee() {
+  var res, artists;
   return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default()('http://3.21.165.5:1337/issues'));
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default()("http://3.21.165.5:1337/artists"));
 
         case 2:
           res = _context.sent;
@@ -12053,11 +11786,9 @@ Issues.getInitialProps = function _callee() {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
         case 5:
-          data = _context.sent;
+          artists = _context.sent;
           return _context.abrupt("return", {
-            issues: data.sort(function (a, b) {
-              return a.number - b.number;
-            }).reverse()
+            artists: artists
           });
 
         case 7:
@@ -12068,7 +11799,7 @@ Issues.getInitialProps = function _callee() {
   }, null, null, null, Promise);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Issues);
+/* harmony default export */ __webpack_exports__["default"] = (Artists);
 
 /***/ }),
 
@@ -12085,14 +11816,14 @@ module.exports = routes().add('issues').add('issue', '/issue/:slug').add('artist
 
 /***/ }),
 
-/***/ 2:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js ***!
-  \*********************************************************************************************************************************************************/
+/***/ 6:
+/*!***********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js ***!
+  \***********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fissues&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fissues.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js!./");
 
 
 /***/ }),
@@ -12108,5 +11839,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=issues.js.map
+},[[6,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=artists.js.map
