@@ -2,19 +2,19 @@ import React from 'react'
 import Link from 'next/link'
 import fetch from 'node-fetch'
 
-function Index({ stars }) {
+function Preact({ stars }) {
   return (
     <div>
-      <p>Next.js has {stars} ⭐️</p>
-      <Link href="/preact">
-        <a>How about preact?</a>
+      <p>Preact has {stars} ⭐</p>
+      <Link href="/">
+        <a>I bet Next.js has more stars (?)</a>
       </Link>
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://api.github.com/repos/zeit/next.js')
+  const res = await fetch('https://api.github.com/repos/developit/preact')
   const json = await res.json() // better use it inside try .. catch
   return {
     props: {
@@ -23,4 +23,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Index
+export default Preact

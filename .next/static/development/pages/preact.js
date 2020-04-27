@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/preact.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -542,21 +542,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Findex.js!./":
-/*!**********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Findex.js ***!
-  \**********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpreact&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fpreact.js!./":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpreact&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fpreact.js ***!
+  \*****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/preact", function() {
+      var mod = __webpack_require__(/*! ./pages/preact.js */ "./pages/preact.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/preact.js */ "./pages/preact.js", function() {
+          if(!next.router.components["/preact"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/preact.js */ "./pages/preact.js")
+          next.router.update("/preact", updatedPage)
         })
       }
       return mod
@@ -4508,10 +4508,10 @@ try {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/preact.js":
+/*!*************************!*\
+  !*** ./pages/preact.js ***!
+  \*************************/
 /*! exports provided: __N_SSG, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4522,12 +4522,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/index.js";
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/preact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function Index(_ref) {
+function Preact(_ref) {
   var stars = _ref.stars;
   return __jsx("div", {
     __self: this,
@@ -4543,8 +4543,8 @@ function Index(_ref) {
       lineNumber: 8,
       columnNumber: 7
     }
-  }, "Next.js has ", stars, " \u2B50\uFE0F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/preact",
+  }, "Preact has ", stars, " \u2B50"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -4558,22 +4558,22 @@ function Index(_ref) {
       lineNumber: 10,
       columnNumber: 9
     }
-  }, "How about preact?")));
+  }, "I bet Next.js has more stars (?)")));
 }
 
 var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Preact);
 
 /***/ }),
 
-/***/ 1:
-/*!**************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Findex.js ***!
-  \**************************************************************************************************************************************************/
+/***/ 2:
+/*!*********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fpreact&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fpreact.js ***!
+  \*********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpreact&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fpreact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpreact&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fpreact.js!./");
 
 
 /***/ }),
@@ -4589,5 +4589,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=preact.js.map

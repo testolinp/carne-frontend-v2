@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1784,10 +1784,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/preact.js":
+/*!*************************!*\
+  !*** ./pages/preact.js ***!
+  \*************************/
 /*! exports provided: getStaticProps, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1800,13 +1800,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/index.js";
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/preact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-function Index({
+function Preact({
   stars
 }) {
   return __jsx("div", {
@@ -1823,8 +1823,8 @@ function Index({
       lineNumber: 8,
       columnNumber: 7
     }
-  }, "Next.js has ", stars, " \u2B50\uFE0F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/preact",
+  }, "Preact has ", stars, " \u2B50"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -1838,11 +1838,11 @@ function Index({
       lineNumber: 10,
       columnNumber: 9
     }
-  }, "How about preact?")));
+  }, "I bet Next.js has more stars (?)")));
 }
 
 async function getStaticProps() {
-  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_2___default()('https://api.github.com/repos/zeit/next.js');
+  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_2___default()('https://api.github.com/repos/developit/preact');
   const json = await res.json(); // better use it inside try .. catch
 
   return {
@@ -1851,18 +1851,18 @@ async function getStaticProps() {
     }
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Preact);
 
 /***/ }),
 
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 4:
+/*!*******************************!*\
+  !*** multi ./pages/preact.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/preact.js */"./pages/preact.js");
 
 
 /***/ }),
@@ -1934,4 +1934,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=preact.js.map
