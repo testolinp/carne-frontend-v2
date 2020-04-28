@@ -7,13 +7,15 @@ class HerospaceIssue extends Component {
     var monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
     const newDate = new Date(date)
 
-    return <span className="herospace-issue__date">{ monthShortNames[newDate.getMonth()]} <span>{ newDate.getDate()}</span></span>
+    return <span className="herospace-issue__date">{ monthShortNames[newDate.getMonth()]} <span>{ newDate.getFullYear()}</span></span>
   }
 
   render() {
     const { currentYear, issue } = this.props
+
+    console.log('issue', issue)
     const imageBackground = {
-      backgroundImage: 'url(' + issue.herospace.url + ')'
+      backgroundImage: 'url(' + 'http://admin.carnemag.co:1337/' + issue.Herospace.url + ')'
     }
 
     return (
@@ -21,7 +23,7 @@ class HerospaceIssue extends Component {
         <div className="herospace-issue__content">
           <div className="herospace-issue__content__left">
             <h2 className="herospace-issue__content__title">Carne®</h2>
-            <h3 className="herospace-issue__content__number"><span>Issue</span> #{ issue.number }</h3>
+            <h3 className="herospace-issue__content__number"><span>Issue</span> #{ issue.Number }</h3>
           </div>
           <ul className="herospace-issue__content__share">
             <li className="herospace-issue__content__share__item"><a href="#" className="icon-pinterest"></a></li>
@@ -31,7 +33,7 @@ class HerospaceIssue extends Component {
           </ul>
         </div>
         <span className="herospace-issue__visual">Visual Arts Magazine</span>
-        { this.getDate(issue.publish) }
+        { this.getDate(issue.Publish) }
         <Extra currentYear={ currentYear } />
       </section>
     )

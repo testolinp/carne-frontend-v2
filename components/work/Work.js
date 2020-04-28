@@ -20,24 +20,39 @@ class Work extends Component {
     const { artist, image, display, backgroundColor } = model
     const { name, lastname, rol, country } = artist
 
-    const imageBackground = {
-      backgroundImage: 'url(' + image.url + ')',
-      backgroundColor: backgroundColor
-    }
-
     return (
-      <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
-        <div className="work__content">
-          <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
-          <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
-          {display && 
-            <div className="work__content__image">
-              <img alt={name} src={image.url} />
-            </div>
-          }
-        </div>
-        <Extra currentYear={ currentYear } />
-      </section>
+      model.image.map((work, index) => {
+        const imageBackground = {
+          backgroundImage: 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')',
+          backgroundColor: backgroundColor ? 'red' : 'yellow'
+        }
+
+        return <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
+          <div className="work__content">
+            <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
+            <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
+            {display && 
+              <div className="work__content__image">
+                <img alt={name} src={image.url} />
+              </div>
+            }
+          </div>
+          <Extra currentYear={ currentYear } />
+        </section>
+      })
+        // <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
+        //   <div className="work__content">
+        //     <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
+        //     <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
+        //     {display && 
+        //       <div className="work__content__image">
+        //         <img alt={name} src={image.url} />
+        //       </div>
+        //     }
+        //   </div>
+        //   <Extra currentYear={ currentYear } />
+        // </section>
+      
     )
   }
 }

@@ -368,6 +368,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/styles.scss */ "./scss/styles.scss");
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Menu */ "./components/Menu.js");
 var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -375,7 +376,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import Menu from '../components/Menu'
+
+
 
 class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(...args) {
@@ -543,7 +545,15 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 35,
         columnNumber: 37
       }
-    }, "ABO"), "UT")))))));
+    }, "ABO"), "UT")))))), __jsx(_components_Menu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      showMenu: menuActive,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 7
+      }
+    }));
   }
 
 }
@@ -658,6 +668,341 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/Menu.js":
+/*!****************************!*\
+  !*** ./components/Menu.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/Menu.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class Menu extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      showMenu
+    } = this.props;
+    return __jsx("section", {
+      className: `menu ${showMenu ? 'menu--active' : ''}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 7
+      }
+    }, __jsx("header", {
+      className: "menu__hd",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 11
+      }
+    }, __jsx("div", {
+      className: "menu__hd__content",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 13
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "menu__hd__content__hamb",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 15
+      }
+    }), __jsx("a", {
+      href: "#",
+      className: "menu__hd__content__lg icon-lg",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 15
+      }
+    }))), __jsx("div", {
+      className: "menu__content",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 11
+      }
+    }, __jsx("ul", {
+      className: "menu__content__list",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 13
+      }
+    }, __jsx("li", {
+      className: "menu__content__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 57
+      }
+    }, __jsx("a", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 72
+      }
+    }, "Home"))), __jsx("li", {
+      className: "menu__content__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/issues",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 57
+      }
+    }, __jsx("a", {
+      href: "#",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 78
+      }
+    }, "Issues"))), __jsx("li", {
+      className: "menu__content__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/artists",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 57
+      }
+    }, __jsx("a", {
+      href: "#",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 79
+      }
+    }, "Artists"))), __jsx("li", {
+      className: "menu__content__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/about",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 57
+      }
+    }, __jsx("a", {
+      href: "#",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 77
+      }
+    }, "About"))), __jsx("li", {
+      className: "menu__content__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/submit",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 57
+      }
+    }, __jsx("a", {
+      href: "#",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 78
+      }
+    }, "Submit")))), __jsx("div", {
+      className: "menu__content__social",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 13
+      }
+    }, __jsx("p", {
+      className: "menu__content__social__title",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 15
+      }
+    }, "Follow us / Find us"), __jsx("ul", {
+      className: "menu__content__social__list",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 15
+      }
+    }, __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-ig",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 19
+      }
+    })), __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-yt",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 19
+      }
+    })), __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-spotify",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 19
+      }
+    })), __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-pinterest",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 19
+      }
+    })), __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-fb",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 19
+      }
+    })), __jsx("li", {
+      className: "menu__content__social__list__item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      href: "#",
+      className: "icon-tw",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46,
+        columnNumber: 19
+      }
+    }))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 
@@ -1014,90 +1359,104 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       rol,
       country
     } = artist;
-    const imageBackground = {
-      backgroundImage: 'url(' + image.url + ')',
-      backgroundColor: backgroundColor
-    };
-    return __jsx("section", {
-      className: `work ${this.displayPosition(display)}`,
-      style: imageBackground,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 7
-      }
-    }, __jsx("div", {
-      className: "work__content",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 9
-      }
-    }, __jsx("h2", {
-      className: "work__content__title",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 11
-      }
-    }, __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 48
-      }
-    }, name), " ", lastname), __jsx("h3", {
-      className: "work__content__subtitle",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 11
-      }
-    }, rol, __jsx("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 58
-      }
-    }), country && __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 77
-      }
-    }, country)), display && __jsx("div", {
-      className: "work__content__image",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 13
-      }
-    }, __jsx("img", {
-      alt: name,
-      src: image.url,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 15
-      }
-    }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      currentYear: currentYear,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 9
-      }
-    }));
+    return model.image.map((work, index) => {
+      const imageBackground = {
+        backgroundImage: 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')',
+        backgroundColor: backgroundColor ? 'red' : 'yellow'
+      };
+      return __jsx("section", {
+        className: `work ${this.displayPosition(display)}`,
+        style: imageBackground,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 16
+        }
+      }, __jsx("div", {
+        className: "work__content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 11
+        }
+      }, __jsx("h2", {
+        className: "work__content__title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 13
+        }
+      }, __jsx("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 50
+        }
+      }, name), " ", lastname), __jsx("h3", {
+        className: "work__content__subtitle",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 13
+        }
+      }, rol, __jsx("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 60
+        }
+      }), country && __jsx("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 79
+        }
+      }, country)), display && __jsx("div", {
+        className: "work__content__image",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 15
+        }
+      }, __jsx("img", {
+        alt: name,
+        src: image.url,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 17
+        }
+      }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        currentYear: currentYear,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 11
+        }
+      }));
+    }) // <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
+    //   <div className="work__content">
+    //     <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
+    //     <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
+    //     {display && 
+    //       <div className="work__content__image">
+    //         <img alt={name} src={image.url} />
+    //       </div>
+    //     }
+    //   </div>
+    //   <Extra currentYear={ currentYear } />
+    // </section>
+    ;
   }
 
 }
@@ -2807,7 +3166,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Artist({
-  artist
+  artist,
+  worksList
 }) {
   // getWorks(works) {
   //   const model = works.map(el => [`id_in=${el.id}`]).join('&')
@@ -2832,7 +3192,17 @@ function Artist({
       lineNumber: 27,
       columnNumber: 9
     }
-  })));
+  }), worksList && worksList.map((work, index) => __jsx(_components_work_Work__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    key: index,
+    model: work,
+    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 13
+    }
+  }))));
 }
 
 async function getServerSideProps({
@@ -2840,9 +3210,11 @@ async function getServerSideProps({
 }) {
   const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://admin.carnemag.co:1337/artists?name=${query.name}&lastname=${query.lastname}`);
   const artist = await res.json();
+  const worksList = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://admin.carnemag.co:1337/editorials?name=${query.name}%20${query.lastname}`).then(res => res.json());
   return {
     props: {
-      artist: artist[0]
+      artist: artist[0],
+      worksList
     }
   };
 }

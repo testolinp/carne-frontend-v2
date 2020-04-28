@@ -8,7 +8,7 @@ import ArtistDetail from '../components/artist/Detail'
 import Work from '../components/work/Work'
 
 
-function Artist({ artist }) {
+function Artist({ artist, worksList }) {
   // getWorks(works) {
 
   //   const model = works.map(el => [`id_in=${el.id}`]).join('&')
@@ -26,6 +26,12 @@ function Artist({ artist }) {
       { artist && 
         <ArtistDetail model={ artist } currentYear={ Global.getCurrentYear() } />
       }
+
+      {worksList && 
+          worksList.map((work, index) =>
+            <Work key={ index } model={ work } currentYear={ Global.getCurrentYear() } />
+          )
+        }
       </Layout>
     </>
   )
@@ -35,9 +41,13 @@ export async function getServerSideProps({ query }) {
   const res = await fetch(`http://admin.carnemag.co:1337/artists?name=${query.name}&lastname=${query.lastname}`)
   const artist = await res.json()
 
+  const worksList = await fetch(`http://admin.carnemag.co:1337/editorials?name=${query.name}%20${query.lastname}`)
+    .then(res => res.json())
+
   return {
     props: {
-      artist: artist[0]
+      artist: artist[0],
+      worksList
     }
   }
 }

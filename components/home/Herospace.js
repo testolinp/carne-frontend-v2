@@ -52,7 +52,7 @@ class Herospace extends Component {
         {/* 
         <Link href="issue" params={{slug: issue.number }}><a className="herospace__content__extra__check"><strong>Check</strong> it out <span className="icon-arrow" /></a></Link>
         */}
-        {/* { showLink && <Link href={{ pathname: '/issue', query: { slug: Number } }}><a className="herospace__content__extra__check"><strong>Check</strong> it out <span className="icon-arrow" /></a></Link> } */}
+        { showLink && <Link href={{ pathname: '/issue', query: { Number: Number } }}><a className="herospace__content__extra__check"><strong>Check</strong> it out <span className="icon-arrow" /></a></Link> }
         </div>
         <ul className="herospace__content__share">
           <li className="herospace__content__share__item">

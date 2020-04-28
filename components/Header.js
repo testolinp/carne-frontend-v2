@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 
 import '../scss/styles.scss'
-// import Menu from '../components/Menu'
+import Menu from '../components/Menu'
 
 class Header extends Component {
   state = {
@@ -46,7 +46,7 @@ class Header extends Component {
         </div>
       </header>
 
-      {/* <Menu showMenu={ menuActive } /> */}
+      <Menu showMenu={ menuActive } />
     </div>
   )
  }

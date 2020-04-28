@@ -453,8 +453,11 @@ img {
             font-family: 'carne';
             content: "\E908";
             position: relative;
-            top: 9px;
+            top: 2px;
             font-size: 27px; }
+            @media (min-width: 1024px) {
+              .ft__content__center__subscribe__input__btn:before, .ft__content__center__subscribe__input button:before {
+                top: 9px; } }
           .ft__content__center__subscribe__input__btn:focus, .ft__content__center__subscribe__input button:focus {
             outline: 0 none; }
         .ft__content__center__subscribe__input ::placeholder {

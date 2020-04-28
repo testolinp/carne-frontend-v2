@@ -123,8 +123,12 @@
               font-family: 'carne';
               content: "\e908";
               position: relative;
-              top: 9px;
+              top: 2px;
               font-size: 27px;
+
+              @include breakpoint('large') {
+                top: 9px;
+              }
             }
 
             &:focus {
