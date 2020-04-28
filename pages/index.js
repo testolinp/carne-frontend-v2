@@ -48,7 +48,7 @@ export async function getStaticProps() {
     props: {
       highlight,
       playlist,
-      featuredArtist: artist,
+      featuredArtist: artist[0],
       issues: data.sort((a, b) => a.number - b.number).reverse()
     },
   }

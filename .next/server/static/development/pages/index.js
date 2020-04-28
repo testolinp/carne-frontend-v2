@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -692,7 +692,7 @@ class Artist extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       country,
       lastname,
       issue
-    } = featuredArtist[0];
+    } = featuredArtist;
     const imageBackground = {
       backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')'
     };
@@ -3493,7 +3493,7 @@ async function getStaticProps() {
     props: {
       highlight,
       playlist,
-      featuredArtist: artist,
+      featuredArtist: artist[0],
       issues: data.sort((a, b) => a.number - b.number).reverse()
     }
   };
@@ -3513,7 +3513,7 @@ async function getStaticProps() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 8:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

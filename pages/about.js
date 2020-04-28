@@ -19,7 +19,7 @@ function About({ members }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://3.21.165.5:1337/teams')
+  const res = await fetch('http://admin.carnemag.co:1337/teams')
   const members = await res.json()
 
   return {

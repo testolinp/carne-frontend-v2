@@ -689,13 +689,12 @@ var Artist = /*#__PURE__*/function (_Component) {
           currentYear = _this$props.currentYear,
           featuredArtist = _this$props.featuredArtist;
       console.log('featuredArtist', featuredArtist);
-      var _featuredArtist$ = featuredArtist[0],
-          image = _featuredArtist$.image,
-          name = _featuredArtist$.name,
-          rol = _featuredArtist$.rol,
-          country = _featuredArtist$.country,
-          lastname = _featuredArtist$.lastname,
-          issue = _featuredArtist$.issue;
+      var image = featuredArtist.image,
+          name = featuredArtist.name,
+          rol = featuredArtist.rol,
+          country = featuredArtist.country,
+          lastname = featuredArtist.lastname,
+          issue = featuredArtist.issue;
       var imageBackground = {
         backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')'
       };
