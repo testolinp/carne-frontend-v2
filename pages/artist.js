@@ -22,13 +22,13 @@ function Artist({ artist, worksList }) {
 
   return (
     <>
-      <Layout title="Carnemag®">
+      <Layout title={'Carnemag® | ' + artist.name + ' ' + artist.lastname}>
       { artist && 
-        <ArtistDetail model={ artist } currentYear={ Global.getCurrentYear() } />
+        <ArtistDetail key="1" model={ artist } currentYear={ Global.getCurrentYear() } />
       }
 
       {worksList && 
-          worksList.map((work, index) =>
+          worksList.map((work, index) => 
             <Work key={ index } model={ work } currentYear={ Global.getCurrentYear() } />
           )
         }

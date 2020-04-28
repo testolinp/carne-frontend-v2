@@ -3,13 +3,9 @@ import React, { Component } from 'react'
 import Extra from '../home/Extra'
 
 class Work extends Component {
-  componentDidMount() {
-    console.log('model', this.props.model);
-  }
-
   displayPosition(display) {
     if(display != null) {
-      return `work--${display.trim()}`
+      return `work--${display}`
     }
 
     return '';
@@ -22,18 +18,20 @@ class Work extends Component {
 
     return (
       model.image.map((work, index) => {
+        let imageDisplay = work.name.replace('.jpg', '').split('-')[2];
+
         const imageBackground = {
-          backgroundImage: 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')',
-          backgroundColor: backgroundColor ? 'red' : 'yellow'
+          backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
+          backgroundColor: backgroundColor ? '#000' : '#000'
         }
 
-        return <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
+        return <section className={`work ${this.displayPosition(imageDisplay)}`} style={ imageBackground }>
           <div className="work__content">
             <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
             <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
-            {display && 
+            {imageDisplay === 'v' && 
               <div className="work__content__image">
-                <img alt={name} src={image.url} />
+                <img alt={name} src={'http://admin.carnemag.co:1337' + work.url} />
               </div>
             }
           </div>

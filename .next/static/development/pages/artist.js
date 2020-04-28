@@ -1413,15 +1413,10 @@ var Work = /*#__PURE__*/function (_Component) {
   }
 
   Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Work, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log('model', this.props.model);
-    }
-  }, {
     key: "displayPosition",
     value: function displayPosition(display) {
       if (display != null) {
-        return "work--".concat(display.trim());
+        return "work--".concat(display);
       }
 
       return '';
@@ -1443,17 +1438,18 @@ var Work = /*#__PURE__*/function (_Component) {
           rol = artist.rol,
           country = artist.country;
       return model.image.map(function (work, index) {
+        var imageDisplay = work.name.replace('.jpg', '').split('-')[2];
         var imageBackground = {
-          backgroundImage: 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')',
-          backgroundColor: backgroundColor ? 'red' : 'yellow'
+          backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
+          backgroundColor: backgroundColor ? '#000' : '#000'
         };
         return __jsx("section", {
-          className: "work ".concat(_this.displayPosition(display)),
+          className: "work ".concat(_this.displayPosition(imageDisplay)),
           style: imageBackground,
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30,
+            lineNumber: 28,
             columnNumber: 16
           }
         }, __jsx("div", {
@@ -1461,7 +1457,7 @@ var Work = /*#__PURE__*/function (_Component) {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31,
+            lineNumber: 29,
             columnNumber: 11
           }
         }, __jsx("h2", {
@@ -1469,14 +1465,14 @@ var Work = /*#__PURE__*/function (_Component) {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32,
+            lineNumber: 30,
             columnNumber: 13
           }
         }, __jsx("span", {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32,
+            lineNumber: 30,
             columnNumber: 50
           }
         }, name), " ", lastname), __jsx("h3", {
@@ -1484,38 +1480,38 @@ var Work = /*#__PURE__*/function (_Component) {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 31,
             columnNumber: 13
           }
         }, rol, __jsx("br", {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 31,
             columnNumber: 60
           }
         }), country && __jsx("span", {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 31,
             columnNumber: 79
           }
-        }, country)), display && __jsx("div", {
+        }, country)), imageDisplay === 'v' && __jsx("div", {
           className: "work__content__image",
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35,
+            lineNumber: 33,
             columnNumber: 15
           }
         }, __jsx("img", {
           alt: name,
-          src: image.url,
+          src: 'http://admin.carnemag.co:1337' + work.url,
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36,
+            lineNumber: 34,
             columnNumber: 17
           }
         }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -1523,7 +1519,7 @@ var Work = /*#__PURE__*/function (_Component) {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40,
+            lineNumber: 38,
             columnNumber: 11
           }
         }));
@@ -11225,7 +11221,7 @@ function Artist(_ref) {
   //     .then( worksList => this.setState({ worksList }))
   // }
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Carnemag\xAE",
+    title: 'Carnemag® | ' + artist.name + ' ' + artist.lastname,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -11233,6 +11229,7 @@ function Artist(_ref) {
       columnNumber: 7
     }
   }, artist && __jsx(_components_artist_Detail__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    key: "1",
     model: artist,
     currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_2___default.a.getCurrentYear(),
     __self: this,

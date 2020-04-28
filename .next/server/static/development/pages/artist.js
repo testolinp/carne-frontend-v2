@@ -1330,13 +1330,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  componentDidMount() {
-    console.log('model', this.props.model);
-  }
-
   displayPosition(display) {
     if (display != null) {
-      return `work--${display.trim()}`;
+      return `work--${display}`;
     }
 
     return '';
@@ -1360,17 +1356,18 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       country
     } = artist;
     return model.image.map((work, index) => {
+      let imageDisplay = work.name.replace('.jpg', '').split('-')[2];
       const imageBackground = {
-        backgroundImage: 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')',
-        backgroundColor: backgroundColor ? 'red' : 'yellow'
+        backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
+        backgroundColor: backgroundColor ? '#000' : '#000'
       };
       return __jsx("section", {
-        className: `work ${this.displayPosition(display)}`,
+        className: `work ${this.displayPosition(imageDisplay)}`,
         style: imageBackground,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 28,
           columnNumber: 16
         }
       }, __jsx("div", {
@@ -1378,7 +1375,7 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 29,
           columnNumber: 11
         }
       }, __jsx("h2", {
@@ -1386,14 +1383,14 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 30,
           columnNumber: 13
         }
       }, __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 30,
           columnNumber: 50
         }
       }, name), " ", lastname), __jsx("h3", {
@@ -1401,38 +1398,38 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 31,
           columnNumber: 13
         }
       }, rol, __jsx("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 31,
           columnNumber: 60
         }
       }), country && __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 31,
           columnNumber: 79
         }
-      }, country)), display && __jsx("div", {
+      }, country)), imageDisplay === 'v' && __jsx("div", {
         className: "work__content__image",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 33,
           columnNumber: 15
         }
       }, __jsx("img", {
         alt: name,
-        src: image.url,
+        src: 'http://admin.carnemag.co:1337' + work.url,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 34,
           columnNumber: 17
         }
       }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -1440,7 +1437,7 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 38,
           columnNumber: 11
         }
       }));
@@ -3176,7 +3173,7 @@ function Artist({
   //     .then( worksList => this.setState({ worksList }))
   // }
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Carnemag\xAE",
+    title: 'Carnemag® | ' + artist.name + ' ' + artist.lastname,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -3184,6 +3181,7 @@ function Artist({
       columnNumber: 7
     }
   }, artist && __jsx(_components_artist_Detail__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    key: "1",
     model: artist,
     currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
     __self: this,
