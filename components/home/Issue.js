@@ -15,7 +15,7 @@ class Issue extends Component {
     const { Herospace, Number, highlight_artists, secondary_artists, Publish } = issue
 
     const imageBackground = {
-      backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + Herospace.url + ')',
+      backgroundImage: 'url(' + Herospace.url + ')',
     }
 
     return (

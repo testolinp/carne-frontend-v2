@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1006,10 +1006,10 @@ class Menu extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./components/artist/Detail.js":
-/*!*************************************!*\
-  !*** ./components/artist/Detail.js ***!
-  \*************************************/
+/***/ "./components/artists/Artist.js":
+/*!**************************************!*\
+  !*** ./components/artists/Artist.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1017,27 +1017,31 @@ class Menu extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/artist/Detail.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/artists/Artist.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+
+class ArtistIssue extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     const {
       currentYear,
       model
     } = this.props;
     const {
+      issue,
       name,
       lastname,
-      image,
+      country,
       rol,
-      country
+      image
     } = model;
     const backgroundImage = {
-      backgroundImage: 'url(' + image.url + ')'
+      backgroundImage: image ? 'url(' + image.url + ')' : 'none'
     };
     return __jsx("section", {
       className: "artistIssue",
@@ -1045,7 +1049,7 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 7
       }
     }, __jsx("div", {
@@ -1053,7 +1057,7 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 15,
         columnNumber: 9
       }
     }, __jsx("div", {
@@ -1061,7 +1065,7 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 16,
         columnNumber: 11
       }
     }, __jsx("div", {
@@ -1069,7 +1073,7 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 17,
         columnNumber: 13
       }
     }, __jsx("h2", {
@@ -1077,14 +1081,14 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 18,
         columnNumber: 15
       }
     }, __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 18,
         columnNumber: 59
       }
     }, name), " ", lastname), __jsx("h3", {
@@ -1092,29 +1096,74 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 15
       }
     }, rol, __jsx("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 69
       }
     }), country && __jsx("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 88
       }
-    }, country))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, country)), __jsx("div", {
+      className: "artistIssue__content__extra",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 15
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: {
+        pathname: '/artist',
+        query: {
+          name: name,
+          lastname: lastname
+        }
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 17
+      }
+    }, __jsx("a", {
+      className: "artistIssue__content__extra__check",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 97
+      }
+    }, __jsx("strong", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 147
+      }
+    }, "More"), " info ", __jsx("span", {
+      className: "icon-arrow",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 174
+      }
+    }))))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_2__["default"], {
       currentYear: currentYear,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 9
       }
     }));
@@ -1122,7 +1171,7 @@ class ArtistDetail extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (ArtistDetail);
+/* harmony default export */ __webpack_exports__["default"] = (ArtistIssue);
 
 /***/ }),
 
@@ -1309,156 +1358,6 @@ class Extra extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Extra);
-
-/***/ }),
-
-/***/ "./components/work/Work.js":
-/*!*********************************!*\
-  !*** ./components/work/Work.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/work/Work.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  displayPosition(display) {
-    if (display != null) {
-      return `work--${display}`;
-    }
-
-    return '';
-  }
-
-  render() {
-    const {
-      currentYear,
-      model
-    } = this.props;
-    const {
-      artist,
-      image,
-      display,
-      backgroundColor
-    } = model;
-    const {
-      name,
-      lastname,
-      rol,
-      country
-    } = artist;
-    return model.image.map((work, index) => {
-      let imageDisplay = work.name.replace('.jpg', '').split('-')[2];
-      const imageBackground = {
-        backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
-        backgroundColor: backgroundColor ? '#000' : '#000'
-      };
-      return __jsx("section", {
-        className: `work ${this.displayPosition(imageDisplay)}`,
-        style: imageBackground,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 16
-        }
-      }, __jsx("div", {
-        className: "work__content",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 11
-        }
-      }, __jsx("h2", {
-        className: "work__content__title",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 13
-        }
-      }, __jsx("span", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 50
-        }
-      }, name), " ", lastname), __jsx("h3", {
-        className: "work__content__subtitle",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 13
-        }
-      }, rol, __jsx("br", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 60
-        }
-      }), country && __jsx("span", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 79
-        }
-      }, country)), imageDisplay === 'v' && __jsx("div", {
-        className: "work__content__image",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33,
-          columnNumber: 15
-        }
-      }, __jsx("img", {
-        alt: name,
-        src: 'http://admin.carnemag.co:1337' + work.url,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 17
-        }
-      }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        currentYear: currentYear,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 11
-        }
-      }));
-    }) // <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
-    //   <div className="work__content">
-    //     <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
-    //     <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
-    //     {display && 
-    //       <div className="work__content__image">
-    //         <img alt={name} src={image.url} />
-    //       </div>
-    //     }
-    //   </div>
-    //   <Extra currentYear={ currentYear } />
-    // </section>
-    ;
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Work);
 
 /***/ }),
 
@@ -3131,28 +3030,25 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/artist.js":
-/*!*************************!*\
-  !*** ./pages/artist.js ***!
-  \*************************/
-/*! exports provided: getServerSideProps, default */
+/***/ "./pages/artists.js":
+/*!**************************!*\
+  !*** ./pages/artists.js ***!
+  \**************************/
+/*! exports provided: getStaticProps, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
-/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_artist_Detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/artist/Detail */ "./components/artist/Detail.js");
-/* harmony import */ var _components_work_Work__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/work/Work */ "./components/work/Work.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/artist.js";
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_artists_Artist__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/artists/Artist */ "./components/artists/Artist.js");
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/artists.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3160,63 +3056,47 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-function Artist({
-  artist,
-  worksList
+function Artists({
+  artists
 }) {
-  // getWorks(works) {
-  //   const model = works.map(el => [`id_in=${el.id}`]).join('&')
-  //   fetch(`http://3.21.165.5:1337/works/?${model}`)
-  //     .then(response => response.json())
-  //     .then( worksList => this.setState({ worksList }))
-  // }
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: 'Carnemag® | ' + artist.name + ' ' + artist.lastname,
+  return __jsx("section", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Carnemag\xAE | Artists",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
       columnNumber: 7
     }
-  }, artist && __jsx(_components_artist_Detail__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    key: "1",
-    model: artist,
-    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
-    }
-  }), worksList && worksList.map((work, index) => __jsx(_components_work_Work__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, artists.map((artist, index) => __jsx(_components_artists_Artist__WEBPACK_IMPORTED_MODULE_4__["default"], {
     key: index,
-    model: work,
-    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_3___default.a.getCurrentYear(),
+    model: artist,
+    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_2___default.a.getCurrentYear(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 13
+      lineNumber: 14,
+      columnNumber: 11
     }
   }))));
 }
 
-async function getServerSideProps({
-  query
-}) {
-  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://admin.carnemag.co:1337/artists?name=${query.name}&lastname=${query.lastname}`);
-  const artist = await res.json();
-  const worksList = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://admin.carnemag.co:1337/editorials?name=${query.name}%20${query.lastname}`).then(res => res.json());
+async function getStaticProps() {
+  const res = await node_fetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://3.21.165.5:1337/artists`);
+  const artists = await res.json();
   return {
     props: {
-      artist: artist[0],
-      worksList
+      artists
     }
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (Artist);
+/* harmony default export */ __webpack_exports__["default"] = (Artists);
 
 /***/ }),
 
@@ -3231,14 +3111,14 @@ async function getServerSideProps({
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************!*\
-  !*** multi ./pages/artist.js ***!
-  \*******************************/
+/***/ 5:
+/*!********************************!*\
+  !*** multi ./pages/artists.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/artist.js */"./pages/artist.js");
+module.exports = __webpack_require__(/*! /Users/patriciot/Projects/personal/carne-frontend-v2/pages/artists.js */"./pages/artists.js");
 
 
 /***/ }),
@@ -3343,4 +3223,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=artist.js.map
+//# sourceMappingURL=artists.js.map

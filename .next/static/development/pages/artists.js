@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/artist.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/artists.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -1011,10 +1011,10 @@ var Menu = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ "./components/artist/Detail.js":
-/*!*************************************!*\
-  !*** ./components/artist/Detail.js ***!
-  \*************************************/
+/***/ "./components/artists/Artist.js":
+/*!**************************************!*\
+  !*** ./components/artists/Artist.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1027,13 +1027,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
 
 
 
 
 
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/artist/Detail.js";
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/artists/Artist.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -1043,30 +1045,32 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-var ArtistDetail = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(ArtistDetail, _Component);
 
-  var _super = _createSuper(ArtistDetail);
+var ArtistIssue = /*#__PURE__*/function (_Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(ArtistIssue, _Component);
 
-  function ArtistDetail() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ArtistDetail);
+  var _super = _createSuper(ArtistIssue);
+
+  function ArtistIssue() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ArtistIssue);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ArtistDetail, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ArtistIssue, [{
     key: "render",
     value: function render() {
       var _this$props = this.props,
           currentYear = _this$props.currentYear,
           model = _this$props.model;
-      var name = model.name,
+      var issue = model.issue,
+          name = model.name,
           lastname = model.lastname,
-          image = model.image,
+          country = model.country,
           rol = model.rol,
-          country = model.country;
+          image = model.image;
       var backgroundImage = {
-        backgroundImage: 'url(' + image.url + ')'
+        backgroundImage: image ? 'url(' + image.url + ')' : 'none'
       };
       return __jsx("section", {
         className: "artistIssue",
@@ -1074,7 +1078,7 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 14,
           columnNumber: 7
         }
       }, __jsx("div", {
@@ -1082,7 +1086,7 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 15,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -1090,7 +1094,7 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 16,
           columnNumber: 11
         }
       }, __jsx("div", {
@@ -1098,7 +1102,7 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 17,
           columnNumber: 13
         }
       }, __jsx("h2", {
@@ -1106,14 +1110,14 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 18,
           columnNumber: 15
         }
       }, __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 18,
           columnNumber: 59
         }
       }, name), " ", lastname), __jsx("h3", {
@@ -1121,39 +1125,84 @@ var ArtistDetail = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 19,
           columnNumber: 15
         }
       }, rol, __jsx("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 19,
           columnNumber: 69
         }
       }), country && __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 19,
           columnNumber: 88
         }
-      }, country))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, country)), __jsx("div", {
+        className: "artistIssue__content__extra",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 15
+        }
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: {
+          pathname: '/artist',
+          query: {
+            name: name,
+            lastname: lastname
+          }
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 17
+        }
+      }, __jsx("a", {
+        className: "artistIssue__content__extra__check",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 97
+        }
+      }, __jsx("strong", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 147
+        }
+      }, "More"), " info ", __jsx("span", {
+        className: "icon-arrow",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 174
+        }
+      }))))))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_7__["default"], {
         currentYear: currentYear,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 26,
           columnNumber: 9
         }
       }));
     }
   }]);
 
-  return ArtistDetail;
+  return ArtistIssue;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (ArtistDetail);
+/* harmony default export */ __webpack_exports__["default"] = (ArtistIssue);
 
 /***/ }),
 
@@ -1366,183 +1415,6 @@ var Extra = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Extra);
-
-/***/ }),
-
-/***/ "./components/work/Work.js":
-/*!*********************************!*\
-  !*** ./components/work/Work.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _home_Extra__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../home/Extra */ "./components/home/Extra.js");
-
-
-
-
-
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/components/work/Work.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-var Work = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(Work, _Component);
-
-  var _super = _createSuper(Work);
-
-  function Work() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Work);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Work, [{
-    key: "displayPosition",
-    value: function displayPosition(display) {
-      if (display != null) {
-        return "work--".concat(display);
-      }
-
-      return '';
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this = this;
-
-      var _this$props = this.props,
-          currentYear = _this$props.currentYear,
-          model = _this$props.model;
-      var artist = model.artist,
-          image = model.image,
-          display = model.display,
-          backgroundColor = model.backgroundColor;
-      var name = artist.name,
-          lastname = artist.lastname,
-          rol = artist.rol,
-          country = artist.country;
-      return model.image.map(function (work, index) {
-        var imageDisplay = work.name.replace('.jpg', '').split('-')[2];
-        var imageBackground = {
-          backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
-          backgroundColor: backgroundColor ? '#000' : '#000'
-        };
-        return __jsx("section", {
-          className: "work ".concat(_this.displayPosition(imageDisplay)),
-          style: imageBackground,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 28,
-            columnNumber: 16
-          }
-        }, __jsx("div", {
-          className: "work__content",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 29,
-            columnNumber: 11
-          }
-        }, __jsx("h2", {
-          className: "work__content__title",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30,
-            columnNumber: 13
-          }
-        }, __jsx("span", {
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30,
-            columnNumber: 50
-          }
-        }, name), " ", lastname), __jsx("h3", {
-          className: "work__content__subtitle",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31,
-            columnNumber: 13
-          }
-        }, rol, __jsx("br", {
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31,
-            columnNumber: 60
-          }
-        }), country && __jsx("span", {
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31,
-            columnNumber: 79
-          }
-        }, country)), imageDisplay === 'v' && __jsx("div", {
-          className: "work__content__image",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 15
-          }
-        }, __jsx("img", {
-          alt: name,
-          src: 'http://admin.carnemag.co:1337' + work.url,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34,
-            columnNumber: 17
-          }
-        }))), __jsx(_home_Extra__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          currentYear: currentYear,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 38,
-            columnNumber: 11
-          }
-        }));
-      }) // <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>
-      //   <div className="work__content">
-      //     <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
-      //     <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
-      //     {display && 
-      //       <div className="work__content__image">
-      //         <img alt={name} src={image.url} />
-      //       </div>
-      //     }
-      //   </div>
-      //   <Extra currentYear={ currentYear } />
-      // </section>
-      ;
-    }
-  }]);
-
-  return Work;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Work);
 
 /***/ }),
 
@@ -3117,21 +2989,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartist&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartist.js!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartist&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartist.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js!./":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js ***!
+  \*******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/artist", function() {
-      var mod = __webpack_require__(/*! ./pages/artist.js */ "./pages/artist.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/artists", function() {
+      var mod = __webpack_require__(/*! ./pages/artists.js */ "./pages/artists.js")
       if(true) {
-        module.hot.accept(/*! ./pages/artist.js */ "./pages/artist.js", function() {
-          if(!next.router.components["/artist"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/artist.js */ "./pages/artist.js")
-          next.router.update("/artist", updatedPage)
+        module.hot.accept(/*! ./pages/artists.js */ "./pages/artists.js", function() {
+          if(!next.router.components["/artists"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/artists.js */ "./pages/artists.js")
+          next.router.update("/artists", updatedPage)
         })
       }
       return mod
@@ -11181,91 +11053,76 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/artist.js":
-/*!*************************!*\
-  !*** ./pages/artist.js ***!
-  \*************************/
-/*! exports provided: __N_SSP, default */
+/***/ "./pages/artists.js":
+/*!**************************!*\
+  !*** ./pages/artists.js ***!
+  \**************************/
+/*! exports provided: __N_SSG, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSP", function() { return __N_SSP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
-/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_artist_Detail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/artist/Detail */ "./components/artist/Detail.js");
-/* harmony import */ var _components_work_Work__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/work/Work */ "./components/work/Work.js");
-var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/artist.js";
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_Global__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_artists_Artist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/artists/Artist */ "./components/artists/Artist.js");
+var _jsxFileName = "/Users/patriciot/Projects/personal/carne-frontend-v2/pages/artists.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
-
-
-function Artist(_ref) {
+function Artists(_ref) {
   var _this = this;
 
-  var artist = _ref.artist,
-      worksList = _ref.worksList;
-  // getWorks(works) {
-  //   const model = works.map(el => [`id_in=${el.id}`]).join('&')
-  //   fetch(`http://3.21.165.5:1337/works/?${model}`)
-  //     .then(response => response.json())
-  //     .then( worksList => this.setState({ worksList }))
-  // }
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: 'Carnemag® | ' + artist.name + ' ' + artist.lastname,
+  var artists = _ref.artists;
+  return __jsx("section", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Carnemag\xAE | Artists",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
       columnNumber: 7
     }
-  }, artist && __jsx(_components_artist_Detail__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    key: "1",
-    model: artist,
-    currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_2___default.a.getCurrentYear(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
-    }
-  }), worksList && worksList.map(function (work, index) {
-    return __jsx(_components_work_Work__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, artists.map(function (artist, index) {
+    return __jsx(_components_artists_Artist__WEBPACK_IMPORTED_MODULE_3__["default"], {
       key: index,
-      model: work,
-      currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_2___default.a.getCurrentYear(),
+      model: artist,
+      currentYear: _components_Global__WEBPACK_IMPORTED_MODULE_1___default.a.getCurrentYear(),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 13
+        lineNumber: 14,
+        columnNumber: 11
       }
     });
   })));
 }
 
-var __N_SSP = true;
-/* harmony default export */ __webpack_exports__["default"] = (Artist);
+var __N_SSG = true;
+/* harmony default export */ __webpack_exports__["default"] = (Artists);
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fartist&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartist.js ***!
-  \*********************************************************************************************************************************************************/
+/***/ 5:
+/*!***********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js ***!
+  \***********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fartist&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartist.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartist&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartist.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fartists&absolutePagePath=%2FUsers%2Fpatriciot%2FProjects%2Fpersonal%2Fcarne-frontend-v2%2Fpages%2Fartists.js!./");
 
 
 /***/ }),
@@ -11281,5 +11138,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=artist.js.map
+},[[5,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=artists.js.map

@@ -8,7 +8,7 @@ class ArtistDetail extends Component {
     const { name, lastname, image, rol, country } = model
 
     const backgroundImage = {
-      backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')'
+      backgroundImage: 'url(' + image.url + ')'
     }
 
     return (

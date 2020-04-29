@@ -4,10 +4,9 @@ import Extra from './Extra'
 class Artist extends Component {
   render() {
     const { currentYear, featuredArtist } = this.props
-    console.log('featuredArtist', featuredArtist)
     const { image, name, rol, country, lastname, issue } = featuredArtist
     const imageBackground = {
-      backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + image.url + ')',
+      backgroundImage: 'url(' + image.url + ')',
     }
 
     return (

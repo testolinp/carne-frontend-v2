@@ -10,7 +10,7 @@ class Playlist extends Component {
 
     console.log('issue', issue)
     const imageBackground = {
-      backgroundImage: 'url(' + 'http://3.21.165.5:1337/' + background.url + ')',
+      backgroundImage: 'url(' + background.url + ')',
     }
 
     return (

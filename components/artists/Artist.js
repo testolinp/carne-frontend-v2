@@ -7,7 +7,7 @@ class ArtistIssue extends Component {
     const { currentYear, model } = this.props
     const { issue, name, lastname, country, rol, image } = model
     const backgroundImage = {
-      backgroundImage: image ? 'url(' + 'http://3.21.165.5:1337' + image.url + ')' : 'none'
+      backgroundImage: image ? 'url(' + image.url + ')' : 'none'
     }
 
     return (
