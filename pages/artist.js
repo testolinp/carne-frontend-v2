@@ -1,6 +1,5 @@
 import React from 'react'
 import fetch from 'node-fetch'
-import Head from 'next/head'
 
 import Global from '../components/Global'
 import Layout from '../components/Layout'

@@ -8,7 +8,6 @@ class Playlist extends Component {
     const { currentYear, issuePlaylist } = this.props
     const { spotify, nickname, artist, background, issue } = issuePlaylist
 
-    console.log('issue', issue)
     const imageBackground = {
       backgroundImage: 'url(' + background.url + ')',
     }

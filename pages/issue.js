@@ -8,10 +8,10 @@ import Playlist from '../components/home/Playlist'
 import IssueDetail from '../components/issue/Artist'
 
 function Issue({ currentIssue, issuePlaylist }) {
-  console.log(issuePlaylist)
+  console.log(currentIssue, issuePlaylist)
   return (
     <>
-      <Layout title="Carnemag® | Issues">
+      <Layout title={ ' Carnemag® | Issue ' + currentIssue.Number }>
         { currentIssue &&
           <HerospaceIssue key="1" issue={ currentIssue } currentYear={ Global.getCurrentYear() } />
         }
@@ -38,11 +38,17 @@ export async function getServerSideProps({ query }) {
     .then(res => res.json())
 
   return {
-    props : {
+    props: {
       currentIssue: currentIssue[0],
       issuePlaylist: issuePlaylist[0]
     }
   }
+  // return {
+  //   props : {
+  //     currentIssue: currentIssue[0],
+  //     issuePlaylist: issuePlaylist[0]
+  //   }
+  // }
 }
 
 export default Issue

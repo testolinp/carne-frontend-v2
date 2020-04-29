@@ -21,7 +21,7 @@ class Work extends Component {
         let imageDisplay = work.name.replace('.jpg', '').split('-')[2];
 
         const imageBackground = {
-          backgroundImage: imageDisplay != 'v' ? 'url(' + 'http://admin.carnemag.co:1337' + work.url + ')' : 'none',
+          backgroundImage: imageDisplay != 'v' ? 'url(' + work.url + ')' : 'none',
           backgroundColor: backgroundColor ? '#000' : '#000'
         }
 
@@ -31,7 +31,7 @@ class Work extends Component {
             <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
             {imageDisplay === 'v' && 
               <div className="work__content__image">
-                <img alt={name} src={'http://admin.carnemag.co:1337' + work.url} />
+                <img alt={name} src={work.url} />
               </div>
             }
           </div>

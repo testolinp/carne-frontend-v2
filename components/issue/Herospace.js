@@ -13,9 +13,8 @@ class HerospaceIssue extends Component {
   render() {
     const { currentYear, issue } = this.props
 
-    console.log('issue', issue)
     const imageBackground = {
-      backgroundImage: 'url(' + 'http://admin.carnemag.co:1337/' + issue.Herospace.url + ')'
+      backgroundImage: 'url(' + issue.Herospace.url + ')'
     }
 
     return (
