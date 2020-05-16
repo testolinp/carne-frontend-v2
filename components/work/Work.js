@@ -25,7 +25,7 @@ class Work extends Component {
           backgroundColor: backgroundColor ? '#000' : '#000'
         }
 
-        return <section className={`work ${this.displayPosition(imageDisplay)}`} style={ imageBackground }>
+        return <section key={index} className={`work ${this.displayPosition(imageDisplay)}`} style={ imageBackground }>
           <div className="work__content">
             <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
             <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
@@ -35,7 +35,7 @@ class Work extends Component {
               </div>
             }
           </div>
-          <Extra currentYear={ currentYear } />
+          {/* <Extra currentYear={ currentYear } /> */}
         </section>
       })
         // <section className={`work ${this.displayPosition(display)}`} style={ imageBackground }>

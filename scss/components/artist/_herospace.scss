@@ -1,0 +1,226 @@
+.herospaceArtist {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  background: #f6f6f6;
+
+  @include breakpoint('large') {
+    overflow-x: hidden;
+    height: 100vh;
+    padding: 100px 0 0;
+  }
+
+  &__content {
+    @include breakpoint('large') {
+      padding: 30px 0 0;
+    }
+
+    &__number {
+      padding-bottom: 25px;
+      display: block;
+      font-family: var(--main-font);
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--color-yellow);
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        font-size: 18px;
+      }
+
+      small {
+        display: inline;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 2px;
+          margin-right: 7px;
+          position: relative;
+          top: -4px;
+          background: var(--color-yellow);
+        }
+      }
+    }
+
+    &__issue {
+      padding: 0 25px 35px;
+      display: block;
+      font-family: var(--main-font);
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--color-yellow);
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        font-size: 18px;
+      }
+
+      small {
+        display: inline;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 2px;
+          margin-right: 7px;
+          position: relative;
+          top: -4px;
+          background: var(--color-yellow);
+        }
+      }
+    }
+
+    &__title {
+      font-family: var(--global-text);
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 58px;
+      color: #000;
+      letter-spacing: -3px;
+
+      @include breakpoint('large') {
+        font-size: 100px;
+        line-height: 80px;
+      }
+
+      span {
+        display: block;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 40px;
+          height: 10px;
+          margin-right: 16px;
+          position: relative;
+          top: -16px;
+          background: #000;
+
+          @include breakpoint('large') {
+            width: 50px;
+            height: 10px;
+            margin-right: 20px;
+            top: -22px;
+          }
+        }
+      }
+    }
+
+    &__subtitle {
+      padding: 40px 0 0 25px;
+      font-family: var(--global-text);
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 27px;
+      color: #000;
+
+      @include breakpoint('large') {
+        padding-left: 135px;
+        line-height: 29px;
+      }
+
+      span {
+        display: block;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 25px;
+          height: 3px;
+          margin-right: 12px;
+          position: relative;
+          top: -7px;
+          background: #000;
+
+          @include breakpoint('large') {
+            width: 20px;
+            height: 3px;
+            margin-right: 10px;
+            top: -8px;
+          }
+        }
+      }
+    }
+
+    &__columns {
+      @include breakpoint('large') {
+        display: flex;
+      }
+    }
+
+    &__left {
+      @include breakpoint('large') {
+        width: 35%;
+      }
+    }
+
+    &__right {
+      padding: 30px 25px;
+
+      @include breakpoint('large') {
+        width: 35%;
+        padding-top: 0;
+      }
+
+      h3 {
+        font-family: var(--global-text);
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #000;
+
+        @include breakpoint('large') {
+          font-size: 15px;
+          line-height: 23px;
+        }
+      }
+
+      &__content {
+        padding: 20px 0 0;
+        white-space: pre-wrap;
+        font-family: var(--global-text);
+        font-size: 13px;
+        line-height: 18px;
+        color: #000;
+
+        @include breakpoint('large') {
+          position: relative;
+          padding: 50px 0 0;
+          line-height: 23px;
+        }
+
+        &:before {
+          content: '_';
+          display: none;
+          font-family: var(--global-text);
+          font-size: 13px;
+          line-height: 18px;
+          color: #000;
+          position: absolute;
+          top: 10px;
+          left: 0;
+
+          @include breakpoint('large') {
+            display: block;
+          }
+        }
+      }
+
+      &__web {
+        padding: 30px 0;
+
+        a {
+          font-family: var(--global-text);
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+          color: #000;
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 
 import Global from '../components/Global'
 import Layout from '../components/Layout'
-import ArtistDetail from '../components/artist/Detail'
+import HerospaceArtist from '../components/artist/Herospace'
 import Work from '../components/work/Work'
 
 
@@ -23,7 +23,7 @@ function Artist({ artist, worksList }) {
     <>
       <Layout title={'Carnemag® | ' + artist.name + ' ' + artist.lastname}>
       { artist && 
-        <ArtistDetail key="1" model={ artist } currentYear={ Global.getCurrentYear() } />
+        <HerospaceArtist key="1" model={ artist } />
       }
 
       {worksList && 
