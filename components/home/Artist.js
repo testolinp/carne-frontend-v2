@@ -29,7 +29,7 @@ class Artist extends Component {
           </div> */}
         </div>
         <span className="artist__date">Issue<span>#{ issue.Number }</span></span>
-        <Extra currentYear={ currentYear }  />
+        {/* <Extra currentYear={ currentYear }  /> */}
       </section>
     )
   }

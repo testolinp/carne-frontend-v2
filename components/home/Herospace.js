@@ -79,7 +79,7 @@ class Herospace extends Component {
       </div>
       <span className="herospace__visual">Visual Arts Magazine</span>
       { this.getDate(Publish) }
-      <Extra currentYear={ currentYear }/>
+      {/* <Extra currentYear={ currentYear }/> */}
     </section>
     )
   }

@@ -42,7 +42,7 @@ class Issue extends Component {
         </div>
         <span className="issue__visual">Visual Arts Magazine</span>
         { this.getDate(Publish) }
-        <Extra currentYear={ currentYear }/>
+        {/* <Extra currentYear={ currentYear }/> */}
       </section>
     )
   }

@@ -30,7 +30,7 @@ class Playlist extends Component {
             </div>
           </div>
         </div>
-        <Extra currentYear={ currentYear }  />
+        {/* <Extra currentYear={ currentYear }  /> */}
       </section>
     )
   }
