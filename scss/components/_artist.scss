@@ -12,6 +12,17 @@
     padding: 100px 0 0;
   }
 
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0005;
+  }
+
   &__date {
     display: none;
     transform: rotateZ(-90deg);
@@ -46,6 +57,8 @@
   }
 
   &__content {
+    position: relative;
+
     @include breakpoint('large') {
       padding: 30px 0 0;
     }

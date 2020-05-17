@@ -24,7 +24,7 @@ function Index({ highlight, playlist, featuredArtist, issues }) {
         <Artist featuredArtist={ featuredArtist } currentYear={ Global.getCurrentYear() } />
         <Slider { ...sliderSettings }>
           { issues.map( ( issue, index ) =>
-          <Issue key={ issue.id }  currentYear={ Global.getCurrentYear() } issue={ issue } current={ index + 1 } issues= { issues.length } />
+          <Issue key={ issue.id } currentYear={ Global.getCurrentYear() } issue={ issue } current={ index + 1 } issues= { issues.length } />
           ) }
         </Slider>
       </Layout>

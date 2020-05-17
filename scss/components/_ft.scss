@@ -152,8 +152,13 @@
             div {
               font-family: var(--global-text);
               font-size: 12px;
+              line-height: 15px;
               padding: 0 0 10px;
               color: #000 !important;
+
+              a {
+                display: none;
+              }
             }
           }
         }

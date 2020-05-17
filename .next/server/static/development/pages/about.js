@@ -1202,7 +1202,8 @@ class Team extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 12,
         columnNumber: 9
       }
-    }, members.map(team => __jsx(_TeamBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, members.map((team, index) => __jsx(_TeamBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: index,
       team: team,
       __self: this,
       __source: {

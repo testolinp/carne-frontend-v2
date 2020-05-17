@@ -1293,8 +1293,9 @@ var Team = /*#__PURE__*/function (_Component) {
           lineNumber: 12,
           columnNumber: 9
         }
-      }, members.map(function (team) {
+      }, members.map(function (team, index) {
         return __jsx(_TeamBox__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          key: index,
           team: team,
           __self: _this,
           __source: {
