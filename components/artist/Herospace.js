@@ -1,7 +1,6 @@
 import React from 'react'
 
 const HerospaceArtist = ({model}) => {
-  console.log('model', model)
   const { name, lastname, rol, country, url, description } = model;
 
   return (

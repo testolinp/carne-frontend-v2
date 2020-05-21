@@ -1024,7 +1024,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const HerospaceArtist = ({
   model
 }) => {
-  console.log('model', model);
   const {
     name,
     lastname,
@@ -1038,7 +1037,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -1046,7 +1045,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -1054,7 +1053,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 10,
       columnNumber: 11
     }
   }, __jsx("div", {
@@ -1062,7 +1061,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, __jsx("h2", {
@@ -1070,14 +1069,14 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 15
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 63
     }
   }, name), " ", lastname), __jsx("h3", {
@@ -1085,21 +1084,21 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 15
     }
   }, rol, __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 73
     }
   }), country && __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 92
     }
   }, country))), __jsx("div", {
@@ -1107,14 +1106,14 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 16,
       columnNumber: 15
     }
   }, "CarneMag\xAE inteds to be a catalyst of the art universe.\x03An ecosystem conceived and focused in art in all its forms\x03and shapes. Our goal is to build a two lane bridge between artists and the public. A space to connect them with each other. "), __jsx("div", {
@@ -1122,7 +1121,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 17,
       columnNumber: 15
     }
   }, description), __jsx("div", {
@@ -1130,7 +1129,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 15
     }
   }, url && __jsx("a", {
@@ -1139,7 +1138,7 @@ const HerospaceArtist = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 26
     }
   }, url)))))));
