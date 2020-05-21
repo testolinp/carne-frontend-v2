@@ -1248,7 +1248,7 @@ class Work extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             lineNumber: 31,
             columnNumber: 56
           }
-        }, name), " ", lastname), __jsx("h3", {
+        }, name), " ", lastname, " Vertical ", alternativeColor), __jsx("h3", {
           className: "work__content__subtitle",
           __self: this,
           __source: {

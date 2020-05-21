@@ -1276,7 +1276,7 @@ var Work = /*#__PURE__*/function (_Component) {
                 lineNumber: 31,
                 columnNumber: 56
               }
-            }, name), " ", lastname), __jsx("h3", {
+            }, name), " ", lastname, " Vertical ", alternativeColor), __jsx("h3", {
               className: "work__content__subtitle",
               __self: _this,
               __source: {
