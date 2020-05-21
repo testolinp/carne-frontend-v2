@@ -28,7 +28,7 @@ class Work extends Component {
             {({ backgroundColor, color, alternativeColor }) => (
               <section className={`work ${this.displayPosition(imageDisplay)}`} style={{ 'backgroundColor': alternativeColor}}>
                 <div className="work__content">
-                  <h2 className="work__content__title"><span>{ name }</span> { lastname } Vertical {alternativeColor}</h2>
+                  <h2 className="work__content__title"><span>{ name }</span> { lastname }</h2>
                   <h3 className="work__content__subtitle">{ rol }<br />{ country && <span>{ country }</span> }</h3>
                   <div style={{ backgroundColor }} className="work__content__image">
                     <img alt={name} src={work.url} />
